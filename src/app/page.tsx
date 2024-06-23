@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
 // Components
-import Social from "@/components/ui/Social";
-import Photo from "@/components/ui/Photo";
+import Social from "@/components/Hero/Social";
+import Photo from "@/components/Hero/Photo";
 
 export default function Home() {
   return (
@@ -48,6 +48,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Stats />
     </section>
   );
 }

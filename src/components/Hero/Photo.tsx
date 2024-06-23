@@ -45,17 +45,16 @@ export default function Photo() {
             cy="253"
             r="270"
             stroke="#6f00ff"
-            strokeWidth="4"
+            strokeWidth="5"
             strokeLinecap="round"
             strokeLinejoin="round"
-            initial={{ strokeDasharray: "24 10 0 0", strokeDashoffset: 1570 }}
+            initial={{ strokeDasharray: "24 10 0 0" }}
             animate={{
               strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
               rotate: [120, 360],
             }}
             transition={{
               duration: 20,
-              ease: "easeInOut",
               repeat: Infinity,
               repeatType: "reverse",
             }}
