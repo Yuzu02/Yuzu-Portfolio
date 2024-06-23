@@ -4,6 +4,7 @@ import { FiDownload } from "react-icons/fi";
 // Components
 import Social from "@/components/Hero/Social";
 import Photo from "@/components/Hero/Photo";
+import Stats from "@/components/Hero/Stats";
 
 export default function Home() {
   return (

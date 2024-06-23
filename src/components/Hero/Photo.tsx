@@ -14,18 +14,21 @@ export default function Photo() {
         }}
         className="flex justify-center items-center w-full h-full"
       >
-        {/* Image */}
+        {/*Image*/}
+        {/* w-[298px] default size, w-[483px] on xl screens 
+            h-[298px] default size, h-[483px] on xl screens 
+        */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten
+          className="w-[275px] h-[275px] xl:w-[483px] xl:h-[483px] mix-blend-lighten
           absolute"
         >
           <Image
-            src="/assets/photo2.png"
+            src="/assets/roze/photo3.png"
             priority
             quality={100}
             fill
@@ -43,7 +46,7 @@ export default function Photo() {
           <motion.circle
             cx="253"
             cy="253"
-            r="270"
+            r="250"
             stroke="#6f00ff"
             strokeWidth="5"
             strokeLinecap="round"
