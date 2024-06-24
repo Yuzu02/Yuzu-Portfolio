@@ -24,11 +24,11 @@ export default function Photo() {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[275px] h-[275px] xl:w-[483px] xl:h-[483px] mix-blend-lighten
+          className="w-[260px] h-[260px] xl:w-[460px] xl:h-[460px] mix-blend-lighten
           absolute"
         >
           <Image
-            src="/assets/roze/photo3.png"
+            src="/assets/roze/photo5.png"
             priority
             quality={100}
             fill
