@@ -195,7 +195,26 @@ export default function Resume() {
 
             {/* About */}
             <TabsContent value="about" className="w-full">
-              About Me
+              <div className="flex flex-col gap-[30px]">
+                <h3 className="text-4xl font-bold">{AboutData.title}</h3>
+                <p className="max-2[600px] text-white/60 mx-auto xl:mx-0">
+                  {AboutData.description}
+                </p>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                  {AboutData.info.map((item) => {
+                    return (
+                      <li
+                        key={item.fieldName}
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                      >
+                        <span className="text-accent">•</span>
+                        <span className="text-white/60">{item.fieldName}</span>
+                        <span className="text-base">{item.fieldValue}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </TabsContent>
           </div>
         </Tabs>
