@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/common/button";
 import { FiDownload } from "react-icons/fi";
 
 // Components

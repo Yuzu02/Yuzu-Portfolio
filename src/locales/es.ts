@@ -7,6 +7,7 @@ const es = {
   resume: "Currículum",
   work: "Experiencia",
   contact: "Contacto",
+  hireMe: "Contrátame",
 
   // Logo
   logo: "Yuzu",
