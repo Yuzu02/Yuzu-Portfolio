@@ -17,6 +17,10 @@ export const AboutData = {
       fieldValue: "2+ Years",
     },
     {
+      fieldName: "Telegram",
+      fieldValue: "@Yuzu02",
+    },
+    {
       fieldName: "Nationality",
       fieldValue: "American",
     },
@@ -24,10 +28,7 @@ export const AboutData = {
       fieldName: "E-mail",
       fieldValue: "Yuzu_0204@outlook.com",
     },
-    {
-      fieldName: "Telegram",
-      fieldValue: "@Yuzu02",
-    },
+
     {
       fieldName: "Freelance",
       fieldValue: "Available",
