@@ -1,6 +1,6 @@
 export const ProjectsData = [
   {
-    num: "",
+    num: "01",
     category: "",
     title: "",
     description: "",
@@ -10,7 +10,7 @@ export const ProjectsData = [
     github: "",
   },
   {
-    num: "",
+    num: "02",
     category: "",
     title: "",
     description: "",
@@ -20,7 +20,7 @@ export const ProjectsData = [
     github: "",
   },
   {
-    num: "",
+    num: "03",
     category: "",
     title: "",
     description: "",
@@ -30,7 +30,7 @@ export const ProjectsData = [
     github: "",
   },
   {
-    num: "",
+    num: "04",
     category: "",
     title: "",
     description: "",
@@ -40,7 +40,7 @@ export const ProjectsData = [
     github: "",
   },
   {
-    num: "",
+    num: "05",
     category: "",
     title: "",
     description: "",
