@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
-import { getDictionary } from "@/locales/getDictionary";
 import "./globals.css";
 
 // Components

@@ -1,5 +1,9 @@
 import type { Config } from "tailwindcss";
 
+// Extra Accent Colors (#ff0095 , #8800ff , #6f00ff , #00ffea , #ff00c3)
+
+// Extra Accent-Color Hover (#6112c9 , #6300e4)
+
 const config = {
   darkMode: ["class"],
   content: [
@@ -26,6 +30,7 @@ const config = {
     extend: {
       colors: {
         primary: "#1c1c22",
+
         accent: {
           DEFAULT: "#6f00ff",
           hover: "#6112c9",

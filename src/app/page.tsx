@@ -21,8 +21,8 @@ export default function Home() {
               Hello I&apos;m <br /> <span className="text-accent">Yuzu</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and I&apos;am
-              proficient in various programming languages and technologies.
+              I excel at crafting elegant digital experiences & I&apos;am
+              proficient in various programming languages & technologies.
             </p>
             {/* btn & socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">
