@@ -5,8 +5,6 @@ import Link from "next/link";
 import ServicesList from "./ServiceList";
 import { motion } from "framer-motion";
 
-// Components
-
 export default function Services() {
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
@@ -31,7 +29,7 @@ export default function Services() {
                     className="text-5xl font-extrabold text-outline
                   text-transparent group-hover:text-outline-hover transition-all duration-500"
                   >
-                    {service.num}
+                    {`0${service.num}`}
                   </div>
                   <Link
                     href={service.href ?? ""}
