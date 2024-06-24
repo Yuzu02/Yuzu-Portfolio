@@ -30,6 +30,8 @@ const config = {
     extend: {
       colors: {
         primary: "#1c1c22",
+        list: "#27272c",
+        scrollArea: "#232329",
 
         accent: {
           DEFAULT: "#6f00ff",

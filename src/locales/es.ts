@@ -20,7 +20,7 @@ const es = {
     "Destaco en la creación de experiencias digitales elegantes y tengo habilidades en diversos lenguajes de programación y tecnologías.",
 
   // Stats
-  stats: [
+  statsList: [
     { num: 2, text: "Años de Experiencia" },
     { num: 6, text: "Proyectos Completados" },
     { num: 10, text: "Tecnologías Dominadas" },
@@ -54,7 +54,6 @@ const es = {
         "Puedo ayudarte con tus decisiones técnicas y brindarte las mejores soluciones para tu negocio.",
     },
   ],
-
 };
 
 export default es;
