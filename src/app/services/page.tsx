@@ -2,7 +2,7 @@
 
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
-import ServicesList from "./ServiceList";
+import ServicesList from "./Data/ServiceList";
 import { motion } from "framer-motion";
 
 export default function Services() {

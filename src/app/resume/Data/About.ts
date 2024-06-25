@@ -1,7 +1,7 @@
 export const AboutData = {
   title: "About Me",
   description:
-    "I am a Full Stack Developer with a passion for creating and developing web applications. I have experience in both front-end and back-end development, and I am always looking to learn new technologies and improve my skills. I am a quick learner, a team player, and I am always looking for new challenges to tackle. I am currently looking for new opportunities to work on exciting projects and grow as a developer.",
+    "I am a Full Stack Developer with a passion for creating and developing web apps. I am always looking to learn new technologies and improve my skills. I am a quick learner, a team player, and I am always looking for new challenges to tackle. I am currently looking for new opportunities to work on exciting projects and grow as a developer.",
 
   info: [
     {
