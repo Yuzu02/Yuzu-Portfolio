@@ -28,7 +28,7 @@ export default function Photo() {
           absolute"
         >
           <Image
-            src="/assets/roze/photo5.png"
+            src="/assets/Roze/photo5.png"
             priority
             quality={100}
             fill
