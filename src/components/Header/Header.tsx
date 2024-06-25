@@ -19,7 +19,7 @@ export default function Header() {
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
           <Link href={"/contact"}>
-            <Button> Hire Me</Button>
+            <Button className="font-semibold"> Hire Me</Button>
           </Link>
         </div>
 
