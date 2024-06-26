@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
+// Analytics
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 // Components
 import Header from "@/components/Header/Header";
 import PageTransition from "@/components/util/PageTransition";
@@ -45,6 +48,7 @@ export default function RootLayout({
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>
+        <SpeedInsights />
       </body>
     </html>
   );
