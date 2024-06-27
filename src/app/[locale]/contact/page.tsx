@@ -1,7 +1,7 @@
 "use client";
-
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/common/button";
-import { motion } from "framer-motion";
+import { m, motion } from "framer-motion";
 import { Input } from "@/components/common/input";
 
 import {
@@ -17,25 +17,46 @@ import {
 import { FaPhoneAlt, FaEnvelope, FaTelegram } from "react-icons/fa";
 import { Textarea } from "@/components/common/textarea";
 
-const info = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+1) 829-807 5867",
-  },
-  {
-    icon: <FaEnvelope />,
-    title: "Email",
-    description: "Yuzu_0204@outlook.com",
-  },
-  {
-    icon: <FaTelegram />,
-    title: "Telegram",
-    description: "@Yuzu02",
-  },
-];
-
 export default function Contact() {
+  const t = useTranslations("Contact");
+  const contactData = {
+    formData: {
+      title: t("formData.title"),
+      description: t("formData.description"),
+      firstname: t("formData.firstname"),
+      lastname: t("formData.lastname"),
+      email: t("formData.email"),
+      phone: t("formData.phone"),
+      message: t("formData.message"),
+      send: t("formData.send"),
+    },
+    ServicesTabs: {
+      title: t("ServicesTabs.title"),
+      web: t("ServicesTabs.web"),
+      api: t("ServicesTabs.api"),
+      automatization: t("ServicesTabs.automatization"),
+      consulting: t("ServicesTabs.consulting"),
+    },
+  };
+
+  const info = [
+    {
+      icon: <FaPhoneAlt />,
+      title: t("Phone"),
+      description: "(+1) 829-807 5867",
+    },
+    {
+      icon: <FaEnvelope />,
+      title: t("Email"),
+      description: "Yuzu_0204@outlook.com",
+    },
+    {
+      icon: <FaTelegram />,
+      title: t("Telegram"),
+      description: "@Yuzu02",
+    },
+  ];
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -66,15 +87,23 @@ export default function Contact() {
               {/* Select */}
               <Select>
                 <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service" />
+                  <SelectValue placeholder={contactData.ServicesTabs.title} />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="web">Web Development</SelectItem>
-                    <SelectItem value="api">API Development</SelectItem>
-                    <SelectItem value="aut">Automatization</SelectItem>
-                    <SelectItem value="cons">Consulting</SelectItem>
+                    <SelectLabel>{contactData.ServicesTabs.title}</SelectLabel>
+                    <SelectItem value="web">
+                      {contactData.ServicesTabs.web}
+                    </SelectItem>
+                    <SelectItem value="api">
+                      {contactData.ServicesTabs.api}
+                    </SelectItem>
+                    <SelectItem value="aut">
+                      {contactData.ServicesTabs.automatization}
+                    </SelectItem>
+                    <SelectItem value="cons">
+                      {contactData.ServicesTabs.consulting}
+                    </SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -85,7 +114,7 @@ export default function Contact() {
               />
               {/* Button */}
               <Button size="md" className="max-w-40">
-                Send Message
+                {contactData.formData.send}
               </Button>
             </form>
           </div>

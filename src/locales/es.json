@@ -1,6 +1,6 @@
 {
   "Header": {
-    "hireMe": "Contrátame",
+    "hireMe": "Contactar",
     "logo": "Yuzu",
     "logoPoint": "."
   },
@@ -30,16 +30,6 @@
     "ProjectsCompleted": { "num": "6", "text": "Proyectos Completados" },
     "TechMastered": { "num": "10", "text": "Tecnologías Dominadas" },
     "CodeCommits": { "num": "400", "text": "Commits de Código" }
-  },
-
-  "Services": {
-    "ServicesTabs": {
-      "title": "Selecciona un Servicio",
-      "web": "Desarrollo Web",
-      "api": "Desarrollo de API",
-      "automatization": "Automatización",
-      "consulting": "Consultoría"
-    }
   },
 
   "servicesList": {
@@ -208,10 +198,26 @@
 
   "Contact": {
     "formData": {
-      "title": "Trabajemos juntos",
-      "description": "Estoy disponible para trabajos freelance. Conéctate conmigo a través de correo electrónico o Telegram."
+      "title": "Contáctame",
+      "description": "Estoy disponible para trabajos freelance. Conéctate conmigo a través de correo electrónico o Telegram.",
+      "firstname": "Nombre",
+      "lastname": "Apellido",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "message": "Escribe tu mensaje aquí",
+      "send": "Enviar Mensaje"
     },
+
+    "ServicesTabs": {
+      "title": "Selecciona un Servicio",
+      "web": "Desarrollo Web",
+      "api": "Desarrollo de API",
+      "automatization": "Automatización",
+      "consulting": "Consultoría"
+    },
+
     "Phone": "Teléfono",
-    "Email": "Correo Electrónico"
+    "Email": "Correo Electrónico",
+    "Telegram": "Telegram"
   }
 }

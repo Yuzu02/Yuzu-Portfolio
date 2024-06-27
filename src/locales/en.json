@@ -32,14 +32,12 @@
     "CodeCommits": { "num": "400", "text": "Code Commits" }
   },
 
-  "Services": {
-    "ServicesTabs": {
-      "title": "Select a Service",
-      "web": "Web Development",
-      "api": "API Development",
-      "automatization": "Automatization",
-      "consulting": "Consulting"
-    }
+  "ServicesTabs": {
+    "title": "Select a Service",
+    "web": "Web Development",
+    "api": "API Development",
+    "automatization": "Automatization",
+    "consulting": "Consulting"
   },
 
   "servicesList": {
@@ -210,9 +208,25 @@
   "Contact": {
     "formData": {
       "title": "Let's work together",
-      "description": "I am available for freelance work. Connect with me via phone, email or Telegram."
+      "description": "I am available for freelance work. Connect with me via phone, email or Telegram.",
+      "firstname": "FirstName",
+      "lastname": "LastName",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Type your message here",
+      "send": "Send Message"
     },
+
+    "ServicesTabs": {
+      "title": "Select a Service",
+      "web": "Web Development",
+      "api": "API Development",
+      "automatization": "Automatization",
+      "consulting": "Consulting"
+    },
+
     "Phone": "Phone",
-    "Email": "Email"
+    "Email": "Email",
+    "Telegram": "Telegram"
   }
 }
