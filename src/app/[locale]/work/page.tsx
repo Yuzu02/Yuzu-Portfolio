@@ -18,18 +18,72 @@ import "swiper/css";
 import SliderBtns from "@/components/common/SliderBtns";
 
 export default function Work() {
+  // Translation
+  const t = useTranslations("Projects");
+  // Static Test
+  const Live = t("liveProject");
+  const Github = t("githubRepo");
   // Projects Data
-  const projectData = useTranslations("Projects");
-  const projectList = ["Project1"];
+  const ProjectsData = [
+    {
+      num: t("Project1.num"),
+      category: t("Project1.category"),
+      title: t("Project1.title"),
+      description: t("Project1.description"),
+      stack: [
+        { name: t("Project1.stack.1.name") },
+        { name: t("Project1.stack.2.name") },
+        { name: t("Project1.stack.3.name") },
+        { name: t("Project1.stack.4.name") },
+      ],
+      image: t("Project1.image"),
+      live: t("Project1.live"),
+      github: t("Project1.github"),
+    },
 
-  const [projectsData, setProjectsData] = useState(projectList[0]);
+    {
+      num: t("Project2.num"),
+      category: t("Project2.category"),
+      title: t("Project2.title"),
+      description: t("Project2.description"),
+      stack: [
+        { name: t("Project2.stack.1.name") },
+        { name: t("Project2.stack.2.name") },
+        { name: t("Project2.stack.3.name") },
+        { name: t("Project2.stack.4.name") },
+      ],
+      image: t("Project2.image"),
+      live: t("Project2.live"),
+      github: t("Project2.github"),
+    },
 
-  const handleSlideChange = (swiper: { activeIndex: string | number }) => {
+    {
+      num: t("Project3.num"),
+      category: t("Project3.category"),
+      title: t("Project3.title"),
+      description: t("Project3.description"),
+      stack: [
+        { name: t("Project3.stack.1.name") },
+        { name: t("Project3.stack.2.name") },
+        { name: t("Project3.stack.3.name") },
+        { name: t("Project3.stack.4.name") },
+      ],
+      image: t("Project3.image"),
+      live: t("Project3.live"),
+      github: t("Project3.github"),
+    },
+  ];
+
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+
+  const handleSlideChange = (swiper: { activeIndex: any }) => {
     // get the current project index
-    const currentProject = swiper.activeIndex;
-    // set the current project data
-    setProjectsData(projectList[currentProject as number]);
+    const currentProjectIndex = swiper.activeIndex;
+    // set the current project index
+    setCurrentProjectIndex(currentProjectIndex);
   };
+
+  const currentProject = ProjectsData[currentProjectIndex];
 
   return (
     <motion.section
@@ -38,32 +92,28 @@ export default function Work() {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="mih-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
+      className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:w-[50%} xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* Outline Number */}
               <div className="text-8xl leading-normal font-extrabold text-transparent text-outline">
-                {projectsData.num}
+                {currentProject.num}
               </div>
               {/* Project Category */}
-              <h2
-                className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500
-              capitalize"
-              >
-                {projectsData.category}
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+                {currentProject.category}
               </h2>
               {/* Project Description */}
-              <p className="text-white/60">{projectsData.description}</p>
+              <p className="text-white/60">{currentProject.description}</p>
               {/* Stack */}
               <ul className="flex gap-4">
-                {projectsData.stack.map((item, index) => (
+                {currentProject.stack.map((item, index) => (
                   <li key={item.name} className="text-accent text-xl">
                     {item.name}
-                    {/* Remove the last comma */}
-                    {index !== projectsData.stack.length - 1 && ", "}
+                    {index !== currentProject.stack.length - 1 && ", "}
                   </li>
                 ))}
               </ul>
@@ -72,27 +122,27 @@ export default function Work() {
               {/* Button */}
               <div className="flex items-center gap-4">
                 {/* Live Project Button */}
-                <Link href={projectsData.live}>
+                <Link href={currentProject.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
                         <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>{projectData("liveProject")}</p>
+                        <p>{Live}</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
                 {/* Github Project Button */}
-                <Link href={projectData("githubRepo")}>
+                <Link href={currentProject.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
                         <BsGithub className="text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Github Repository</p>
+                        <p>{Github}</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
@@ -107,25 +157,23 @@ export default function Work() {
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
-              {ProjectsData.map((project) => {
-                return (
-                  <SwiperSlide key={project.num} className="w-full xl:w-[50%]">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                      {/* Overlay */}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                      {/* Image */}
-                      <div className="w-full h-full relative">
-                        <Image
-                          src={project.image}
-                          alt={project.title}
-                          fill
-                          className="object-cover object-center w-full h-full"
-                        />
-                      </div>
+              {ProjectsData.map((project, index) => (
+                <SwiperSlide key={project.num} className="w-full xl:w-[50%]">
+                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    {/* Overlay */}
+                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                    {/* Image */}
+                    <div className="w-full h-full relative">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover object-center w-full h-full"
+                      />
                     </div>
-                  </SwiperSlide>
-                );
-              })}
+                  </div>
+                </SwiperSlide>
+              ))}
               {/* Slider Button */}
               <SliderBtns
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"

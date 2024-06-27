@@ -164,13 +164,43 @@
       "category": "Proyecto Frontend",
       "title": "Aplicación Web de Encriptación",
       "description": "Encripta y desencripta texto en una interfaz fácil de usar con la opción de copiar el texto encriptado al portapapeles",
-      "stack": [
-        { "name": "Html 5" },
-        { "name": "Css 3" },
-        { "name": "Javascript" },
-        { "name": "Sass" }
-      ],
+      "stack": {
+        "1": { "name": "Html 5" },
+        "2": { "name": "Css 3" },
+        "3": { "name": "Javascript" },
+        "4": { "name": "Sass" }
+      },
       "image": "/assets/work/thumb1.png",
+      "live": "https://yuzu02.github.io/Encriptador_AppWeb/",
+      "github": "https://github.com/Yuzu02/Encriptador_AppWeb"
+    },
+    "Project2": {
+      "num": "02",
+      "category": "Proyecto Frontend",
+      "title": "Aplicación Web de Encriptación",
+      "description": "Encripta y desencripta texto en una interfaz fácil de usar con la opción de copiar el texto encriptado al portapapeles",
+      "stack": {
+        "1": { "name": "Html 5" },
+        "2": { "name": "Css 3" },
+        "3": { "name": "Javascript" },
+        "4": { "name": "Sass" }
+      },
+      "image": "/assets/work/thumb2.png",
+      "live": "https://yuzu02.github.io/Encriptador_AppWeb/",
+      "github": "https://github.com/Yuzu02/Encriptador_AppWeb"
+    },
+    "Project3": {
+      "num": "03",
+      "category": "Proyecto Frontend",
+      "title": "Aplicación Web de Encriptación",
+      "description": "Encripta y desencripta texto en una interfaz fácil de usar con la opción de copiar el texto encriptado al portapapeles",
+      "stack": {
+        "1": { "name": "Html 5" },
+        "2": { "name": "Css 3" },
+        "3": { "name": "Javascript" },
+        "4": { "name": "Sass" }
+      },
+      "image": "/assets/work/thumb3.png",
       "live": "https://yuzu02.github.io/Encriptador_AppWeb/",
       "github": "https://github.com/Yuzu02/Encriptador_AppWeb"
     }
