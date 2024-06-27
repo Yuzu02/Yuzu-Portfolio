@@ -1,7 +1,14 @@
 "use client";
 
 import { Button } from "@/components/common/button";
-import { DropdownMenu } from "@/components/common/dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuTrigger,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuCheckboxItem,
+} from "@/components/common/dropdown-menu";
 import { type Locale } from "@/lib/locales";
 import { GlobeIcon } from "lucide-react";
 import { useLocale } from "next-intl";
@@ -19,33 +26,33 @@ export const LanguagePicker: React.FC = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenu.Trigger asChild>
+      <DropdownMenuTrigger asChild>
         <Button type="button" size="md">
           <GlobeIcon className="size-5" />
         </Button>
-      </DropdownMenu.Trigger>
+      </DropdownMenuTrigger>
 
-      <DropdownMenu.Content align="end">
-        <DropdownMenu.Label>Language</DropdownMenu.Label>
-        <DropdownMenu.Separator />
+      <DropdownMenuContent align="end">
+        <DropdownMenuLabel>Language</DropdownMenuLabel>
+        <DropdownMenuSeparator />
 
-        <DropdownMenu.CheckboxItem
+        <DropdownMenuCheckboxItem
           checked={locale === "en"}
           onClick={() => {
             handleLocaleChange("en");
           }}
         >
           English
-        </DropdownMenu.CheckboxItem>
-        <DropdownMenu.CheckboxItem
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
           checked={locale === "es"}
           onClick={() => {
             handleLocaleChange("es");
           }}
         >
           Spanish
-        </DropdownMenu.CheckboxItem>
-      </DropdownMenu.Content>
+        </DropdownMenuCheckboxItem>
+      </DropdownMenuContent>
     </DropdownMenu>
   );
 };
