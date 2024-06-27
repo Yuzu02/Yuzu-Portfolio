@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { LanguagePicker } from "../util/LanguagePicker";
 import Link from "next/link";
 import { Button } from "../common/button";
 
@@ -25,10 +26,14 @@ export default function Header() {
           <Link href={"/contact"}>
             <Button className="font-semibold">{header("hireMe")}</Button>
           </Link>
+          <div className="justify-center items-center font-semibold">
+            <LanguagePicker />
+          </div>
         </div>
 
         {/* Mobile Nav */}
-        <div className="xl:hidden">
+        <div className="xl:hidden flex flex-row space-x-4">
+          <LanguagePicker />
           <MobileNav />
         </div>
       </div>

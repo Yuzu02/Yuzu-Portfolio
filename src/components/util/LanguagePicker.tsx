@@ -13,11 +13,16 @@ import { type Locale } from "@/lib/locales";
 import { GlobeIcon } from "lucide-react";
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
-import React from "react";
+import { useTranslations } from "next-intl";
 
 export const LanguagePicker: React.FC = () => {
   const locale = useLocale() as Locale;
   const router = useRouter();
+  const t = useTranslations("HeaderMenu");
+
+  const languageText = t("LanguagePicker.language");
+  const languageEn = t("LanguagePicker.languages.en");
+  const languageEs = t("LanguagePicker.languages.es");
 
   function handleLocaleChange(newLocale: Locale): void {
     document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=Lax`;
@@ -33,7 +38,7 @@ export const LanguagePicker: React.FC = () => {
       </DropdownMenuTrigger>
 
       <DropdownMenuContent align="end">
-        <DropdownMenuLabel>Language</DropdownMenuLabel>
+        <DropdownMenuLabel>{languageText}</DropdownMenuLabel>
         <DropdownMenuSeparator />
 
         <DropdownMenuCheckboxItem
@@ -42,7 +47,7 @@ export const LanguagePicker: React.FC = () => {
             handleLocaleChange("en");
           }}
         >
-          English
+          {languageEn}
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
           checked={locale === "es"}
@@ -50,7 +55,7 @@ export const LanguagePicker: React.FC = () => {
             handleLocaleChange("es");
           }}
         >
-          Spanish
+          {languageEs}
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>

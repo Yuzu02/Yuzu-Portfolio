@@ -10,7 +10,14 @@
     "services": "Services",
     "resume": "Resume",
     "work": "Work",
-    "contact": "Contact"
+    "contact": "Contact",
+    "LanguagePicker": {
+      "language": "Language",
+      "languages": {
+        "en": "English",
+        "es": "Spanish"
+      }
+    }
   },
 
   "Hero": {

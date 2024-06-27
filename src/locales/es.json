@@ -10,7 +10,14 @@
     "services": "Servicios",
     "resume": "Currículum",
     "work": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "LanguagePicker": {
+      "language": "Idioma",
+      "languages": {
+        "en": "Inglés",
+        "es": "Español"
+      }
+    }
   },
 
   "Hero": {
