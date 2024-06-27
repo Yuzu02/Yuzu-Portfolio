@@ -14,9 +14,6 @@ import {
   SelectValue,
 } from "@/components/common/select";
 
-//Data
-import { contactData } from "./Data/Contact";
-
 import { FaPhoneAlt, FaEnvelope, FaTelegram } from "react-icons/fa";
 import { Textarea } from "@/components/common/textarea";
 

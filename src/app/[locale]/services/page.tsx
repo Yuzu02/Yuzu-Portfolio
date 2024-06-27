@@ -1,11 +1,22 @@
 "use client";
 
+// Translation
+import { useTranslations } from "next-intl";
+
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
-import ServicesList from "./Data/ServiceList";
 import { motion } from "framer-motion";
 
 export default function Services() {
+  // Translation Hook
+  const Services = useTranslations("servicesList");
+  const ServicesList = [
+    "Service1",
+    "Service2",
+    "Service3",
+    "Service4",
+  ] as const;
+
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
       <div className="container mx-auto">
@@ -20,7 +31,7 @@ export default function Services() {
           {ServicesList.map((service) => {
             return (
               <div
-                key={service.num}
+                key={Services(`${service}.title`)}
                 className="flex-1 flex flex-col justify-center gap-6 group"
               >
                 {/*Top*/}
@@ -29,10 +40,10 @@ export default function Services() {
                     className="text-5xl font-extrabold text-outline
                   text-transparent group-hover:text-outline-hover transition-all duration-500"
                   >
-                    {`0${service.num}`}
+                    {Services(`${service}.num`)}
                   </div>
                   <Link
-                    href={service.href ?? ""}
+                    href={Services(`${service}.href`) ?? ""}
                     className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                   >
                     <BsArrowDownRight className="text-primary text-3xl" />
@@ -40,10 +51,12 @@ export default function Services() {
                 </div>
                 {/*Title*/}
                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
-                  {service.text}
+                  {Services(`${service}.text`)}
                 </h2>
                 {/*Description*/}
-                <p className="text-white/60">{service.description}</p>
+                <p className="text-white/60">
+                  {Services(`${service}.description`)}
+                </p>
                 {/*Border*/}
                 <div className="border-b border-white/20 w-full"></div>
               </div>

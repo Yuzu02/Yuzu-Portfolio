@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 // Analytics
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -41,13 +41,15 @@ export const metadata: Metadata = {
   publisher: "Vercel",
 };
 
+interface RootLayoutProps {
+  children: React.ReactNode;
+  params: { locale: string };
+}
+
 export default async function LocaleLayout({
   children,
   params: { locale },
-}: Readonly<{
-  children: React.ReactNode;
-  params: { locale: string };
-}>) {
+}: Readonly<RootLayoutProps>) {
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();

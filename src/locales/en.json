@@ -1,53 +1,188 @@
 {
   "Header": {
-    "home": "Home",
-    "services": "Services",
-    "resume": "Resume",
-    "work": "Work",
-    "contact": "Contact",
     "hireMe": "Hire Me",
     "logo": "Yuzu",
     "logoPoint": "."
   },
 
+  "HeaderMenu": {
+    "home": "Home",
+    "services": "Services",
+    "resume": "Resume",
+    "work": "Work",
+    "contact": "Contact"
+  },
+
   "Hero": {
     "heroTitle": "Full-Stack Developer",
-    "heroSubTitle": "Hello, I'm Yuzu",
-    "heroPhrase": "I excel at crafting elegant digital experiences & I'am proficient in various programming languages & technologies."
+    "heroSubTitle": "Hello,I'm",
+    "heroName": "Yuzu",
+    "heroPhrase": "I excel at crafting elegant digital experiences & I'am proficient in various programming languages & technologies.",
+    "DownloadCV": "Download CV"
   },
 
   "Stats": {
-    "statsTitle": "My Stats",
-    "statsList": [
-      { "num": 2, "text": "Years of Experience" },
-      { "num": 6, "text": "Projects Completed" },
-      { "num": 10, "text": "Technologies Mastered" },
-      { "num": 380, "text": "Code Commits" }
-    ]
+    "statsTitle": "My Stats"
+  },
+
+  "statsList": {
+    "YearsExperience": { "num": "2", "text": "Years of Experience" },
+    "ProjectsCompleted": { "num": "6", "text": "Projects Completed" },
+    "TechMastered": { "num": "10", "text": "Technologies Mastered" },
+    "CodeCommits": { "num": "400", "text": "Code Commits" }
   },
 
   "Services": {
-    "servicesList": [
-      {
-        "num": 1,
-        "text": "Web Development",
-        "description": "I can build you a website from scratch or maintain an existing one. I use the latest technologies to provide you with the best solutions."
-      },
-      {
-        "num": 2,
-        "text": "API Development",
-        "description": "Develop and maintain Restful APIs for your web or mobile applications. I can also help you with the integration of third-party APIs."
-      },
-      {
-        "num": 3,
-        "text": "Automatization",
-        "description": "Automate your business processes and save time and money in the long run by using the latest technologies."
-      },
-      {
-        "num": 4,
-        "text": "Consulting",
-        "description": "I can help you with your technical decisions and provide you with the best solutions for your business."
-      }
-    ]
+    "ServicesTabs": {
+      "title": "Select a Service",
+      "web": "Web Development",
+      "api": "API Development",
+      "automatization": "Automatization",
+      "consulting": "Consulting"
+    }
+  },
+
+  "servicesList": {
+    "Service1": {
+      "num": "01",
+      "text": "Web Development",
+      "description": "I can build you a website from scratch or maintain an existing one. I use the latest technologies to provide you with the best solutions."
+    },
+    "Service2": {
+      "num": "02",
+      "text": "API Development",
+      "description": "Develop and maintain Restful APIs for your web or mobile applications. I can also help you with the integration of third-party APIs."
+    },
+    "Service3": {
+      "num": "03",
+      "text": "Automatization",
+      "description": "Automate your business processes and save time and money in the long run by using the latest technologies."
+    },
+    "Service4": {
+      "num": "04",
+      "text": "Consulting",
+      "description": "I can help you with your technical decisions and provide you with the best solutions for your business."
+    }
+  },
+
+  "Resume": {
+    "Education": "Education",
+    "Experience": "Experience",
+    "Skills": "Skills",
+    "About": "About Me"
+  },
+
+  "About": {
+    "title": "About Me",
+    "description": "I am a Full Stack Developer with a passion for creating and developing web apps. I am always looking to learn new technologies and improve my skills. I am a quick learner, a team player, and I am always looking for new challenges to tackle. I am currently looking for new opportunities to work on exciting projects and grow as a developer."
+  },
+
+  "AboutInfo": {
+    "Name": {
+      "fieldName": "Name",
+      "fieldValue": "Yuzu"
+    },
+    "Phone": {
+      "fieldName": "Phone",
+      "fieldValue": "(+1) 829 807-5868"
+    },
+    "Experience": {
+      "fieldName": "Experience",
+      "fieldValue": "2+ Years"
+    },
+    "Telegram": {
+      "fieldName": "Telegram",
+      "fieldValue": "@Yuzu02"
+    },
+    "Nationality": {
+      "fieldName": "Nationality",
+      "fieldValue": "American"
+    },
+    "Freelance": {
+      "fieldName": "Freelance",
+      "fieldValue": "Available"
+    },
+    "Languages": {
+      "fieldName": "Languages",
+      "fieldValue": "English, Spanish"
+    },
+    "E-mail": {
+      "fieldName": "E-mail",
+      "fieldValue": "Yuzu_0204@outlook.com"
+    }
+  },
+
+  "Education": {
+    "icon": "/assets/resume/cap.svg",
+    "title": "My Education",
+    "description": "I'm a self-taught developer. I have learned everything I know through online courses, tutorials, and documentation. I believe that the best way to learn is by doing, so I'm always working on new projects to put my skills to the test."
+  },
+
+  "EducationList": {
+    "Education1": {
+      "number": "01",
+      "institution": "University O&M",
+      "degree": "Computacional Systems Engineering",
+      "date": "2022 - Present"
+    }
+  },
+
+  "Experience": {
+    "icon": "/assets/resume/badge.svg",
+    "title": "My Experience",
+    "description": "I have been working as a developer for 2+ years. I have worked on a variety of projects, from small websites to large web applications. I have experience in both front-end and back-end development."
+  },
+
+  "ExperienceList": {
+    "Experience1": {
+      "number": "01",
+      "company": "Freelance",
+      "position": "Full Stack Developer",
+      "date": "2022 - Present",
+      "description": "I have worked on various projects as a freelance developer. I have built websites from scratch, maintained existing ones, and developed Restful APIs for web. I have also helped clients automate their business processes and provided consulting services to help them make the best technical decisions for their business."
+    },
+
+    "Experience2": {
+      "number": "02",
+      "company": "Alien Technology",
+      "position": "Technical Support Specialist",
+      "date": "2021 - 2022",
+      "description": "I provided technical support to customers who were experiencing issues with their hardware or software. I helped them troubleshoot their problems and provided solutions to resolve them. I also worked with the development team to identify and fix bugs in the software and improve the user experience."
+    }
+  },
+
+  "Skill": {
+    "title": "My Skills",
+    "description": "I have experience working with the following technologies:"
+  },
+
+  "Projects": {
+    "liveProject": "Live Project",
+    "githubRepo": "Github Repository",
+
+    "Project1": {
+      "num": "01",
+      "category": "Frontend Project",
+      "title": "Encryptor Web App",
+      "description": "Encrypt and Decrypt Text in a user-friendly interface with an option to copy the encrypted text to the clipboard",
+      "stack": [
+        { "name": "Html 5" },
+        { "name": "Css 3" },
+        { "name": "Javascript" },
+        { "name": "Sass" }
+      ],
+      "image": "/assets/work/thumb1.png",
+      "live": "https://yuzu02.github.io/Encriptador_AppWeb/",
+      "github": "https://github.com/Yuzu02/Encriptador_AppWeb"
+    }
+  },
+
+  "Contact": {
+    "formData": {
+      "title": "Let's work together",
+      "description": "I am available for freelance work. Connect with me via phone, email or Telegram."
+    },
+    "Phone": "Phone",
+    "Email": "Email"
   }
 }

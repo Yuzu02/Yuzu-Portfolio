@@ -1,34 +1,37 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { SheetTrigger, Sheet, SheetContent } from "../common/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 
-const Links = [
-  {
-    name: "Home",
-    path: "/",
-  },
-  {
-    name: "Services",
-    path: "/services",
-  },
-  {
-    name: "Resume",
-    path: "/resume",
-  },
-  {
-    name: "Work",
-    path: "/work",
-  },
-  {
-    name: "Contact",
-    path: "/contact",
-  },
-];
-
 export default function MobileNav() {
+  const HeaderMenu = useTranslations("HeaderMenu");
+
+  const Links = [
+    {
+      name: HeaderMenu("home"),
+      path: "/",
+    },
+    {
+      name: HeaderMenu("services"),
+      path: "/services",
+    },
+    {
+      name: HeaderMenu("resume"),
+      path: "/resume",
+    },
+    {
+      name: HeaderMenu("work"),
+      path: "/work",
+    },
+    {
+      name: HeaderMenu("contact"),
+      path: "/contact",
+    },
+  ];
+
   const pathname = usePathname();
   return (
     <Sheet>

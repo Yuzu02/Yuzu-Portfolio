@@ -1,3 +1,7 @@
+// Translation
+import { useTranslations } from "next-intl";
+
+// Utils
 import { Button } from "@/components/common/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -7,6 +11,9 @@ import Photo from "@/components/Hero/Photo";
 import Stats from "@/components/Hero/Stats";
 
 export default function Home() {
+  // Translation
+  const Hero = useTranslations("Hero");
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -16,13 +23,13 @@ export default function Home() {
         >
           {/* Text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Full-Stack Developer</span>
+            <span className="text-xl">{Hero("heroTitle")}</span>
             <h1 className="h1 mb-6">
-              Hello I&apos;m <br /> <span className="text-accent">Yuzu</span>
+              {Hero("heroSubTitle")}
+              <br /> <span className="text-accent"> {Hero("heroName")}</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences & I&apos;am
-              proficient in various programming languages & technologies.
+              {Hero("heroPhrase")}
             </p>
             {/* btn & socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -31,7 +38,7 @@ export default function Home() {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <span className="mr-2">Download CV</span>
+                <span className="mr-2">{Hero("DownloadCV")}</span>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">

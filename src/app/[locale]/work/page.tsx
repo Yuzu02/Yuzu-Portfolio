@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,20 +14,21 @@ import Link from "next/link";
 import Image from "next/image";
 import "swiper/css";
 
-// Data
-import { ProjectsData } from "./Data/Projects";
-
 // Components
-import SliderBtns from "@/components/Work/SliderBtns";
+import SliderBtns from "@/components/common/SliderBtns";
 
 export default function Work() {
-  const [projectsData, setProjectsData] = useState(ProjectsData[0]);
+  // Projects Data
+  const projectData = useTranslations("Projects");
+  const projectList = ["Project1"];
+
+  const [projectsData, setProjectsData] = useState(projectList[0]);
 
   const handleSlideChange = (swiper: { activeIndex: string | number }) => {
     // get the current project index
     const currentProject = swiper.activeIndex;
     // set the current project data
-    setProjectsData(ProjectsData[currentProject as number]);
+    setProjectsData(projectList[currentProject as number]);
   };
 
   return (
@@ -77,13 +79,13 @@ export default function Work() {
                         <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Live Project</p>
+                        <p>{projectData("liveProject")}</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
                 {/* Github Project Button */}
-                <Link href={projectsData.github}>
+                <Link href={projectData("githubRepo")}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">

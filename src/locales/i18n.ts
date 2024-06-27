@@ -1,14 +1,29 @@
+"server-only";
+
 import { notFound } from "next/navigation";
 import { getRequestConfig } from "next-intl/server";
+import { type AbstractIntlMessages } from "next-intl";
+import { Locale, locales } from "../lib/locales";
+const messageImports = {
+  en: () => import("../locales/en.json"),
+  es: () => import("../locales/es.json"),
+} as const satisfies Record<
+  Locale,
+  () => Promise<{
+    default: AbstractIntlMessages & { [key: string]: string };
+  }>
+>;
 
-// Can be imported from a shared config
-const locales = ["en", "es"];
+export function isValidLocale(locale: unknown): locale is Locale {
+  return locales.some((l) => l === locale);
+}
 
-export default getRequestConfig(async ({ locale }) => {
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
+export default getRequestConfig(async (params) => {
+  const baseLocale = new Intl.Locale(params.locale).baseName;
+  if (!isValidLocale(baseLocale)) notFound();
 
+  const messages = (await messageImports[baseLocale]()).default;
   return {
-    messages: (await import(`../locales/${locale}.json`)).default,
+    messages,
   };
 });
