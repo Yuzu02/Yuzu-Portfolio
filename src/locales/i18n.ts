@@ -10,7 +10,7 @@ const messageImports = {
 } as const satisfies Record<
   Locale,
   () => Promise<{
-    default: AbstractIntlMessages & { [key: string]: string };
+    default: AbstractIntlMessages;
   }>
 >;
 
