@@ -11,9 +11,8 @@ import {
 } from "@/components/common/dropdown-menu";
 import { type Locale } from "@/lib/locales";
 import { GlobeIcon } from "lucide-react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
-import { useTranslations } from "next-intl";
 
 export const LanguagePicker: React.FC = () => {
   const locale = useLocale() as Locale;
@@ -37,7 +36,7 @@ export const LanguagePicker: React.FC = () => {
         </Button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" className="mt-2">
         <DropdownMenuLabel>{languageText}</DropdownMenuLabel>
         <DropdownMenuSeparator />
 
