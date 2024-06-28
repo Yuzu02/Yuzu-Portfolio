@@ -122,7 +122,7 @@ export default function Contact() {
               {/* Textarea */}
               <Textarea
                 className="h-[100px] w-full resize-none overflow-hidden"
-                placeholder="Type your message here."
+                placeholder={contactData.formData.message}
               />
               {/* Button */}
               <Button size="md" className="max-w-40">
