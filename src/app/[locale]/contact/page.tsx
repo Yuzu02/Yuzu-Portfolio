@@ -79,10 +79,22 @@ export default function Contact() {
               </p>
               {/* Input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="e-mail" placeholder="E-mail Address" />
-                <Input type="phone" placeholder="Phone Number" />
+                <Input
+                  type={contactData.formData.firstname}
+                  placeholder={contactData.formData.firstname}
+                />
+                <Input
+                  type={contactData.formData.lastname}
+                  placeholder={contactData.formData.lastname}
+                />
+                <Input
+                  type={contactData.formData.email}
+                  placeholder={contactData.formData.email}
+                />
+                <Input
+                  type={contactData.formData.phone}
+                  placeholder={contactData.formData.phone}
+                />
               </div>
               {/* Select */}
               <Select>
