@@ -6,12 +6,13 @@ import { Button } from "../common/button";
 // Components
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
+import { ModeToggle } from "../util/ThemeModePicker";
 
 export default function Header() {
   const header = useTranslations("Header");
 
   return (
-    <header className="py-4 xl:py-6 text-white">
+    <header className="py-4 xl:py-6 dark:text-white text-primary">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href={"./"}>
@@ -24,16 +25,20 @@ export default function Header() {
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
           <Link href={"/contact"}>
-            <Button className="font-semibold">{header("hireMe")}</Button>
+            <Button className="font-semibold" size="default">
+              {header("hireMe")}
+            </Button>
           </Link>
+
           <div className="justify-center items-center font-semibold">
-            <LanguagePicker />
+            <LanguagePicker buttonSize="default" />
+            <ModeToggle />
           </div>
         </div>
 
         {/* Mobile Nav */}
         <div className="xl:hidden flex flex-row space-x-4">
-          <LanguagePicker />
+          <LanguagePicker buttonSize="sm" />
           <MobileNav />
         </div>
       </div>

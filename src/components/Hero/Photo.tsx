@@ -24,8 +24,8 @@ export default function Photo() {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[260px] h-[260px] xl:w-[460px] xl:h-[460px] mix-blend-lighten
-          absolute"
+          className="w-[260px] h-[260px] xl:w-[460px] xl:h-[460px] dark:mix-blend-lighten
+          absolute bg-accent rounded-full z-10"
         >
           <Image
             src="/assets/Roze/photo5.png"

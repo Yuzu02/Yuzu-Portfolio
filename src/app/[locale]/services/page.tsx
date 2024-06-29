@@ -50,7 +50,7 @@ export default function Services() {
                   </Link>
                 </div>
                 {/*Title*/}
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+                <h2 className="text-[42px] font-bold leading-none dark:text-white text-primary group-hover:text-accent transition-all duration-500">
                   {Services(`${service}.text`)}
                 </h2>
                 {/*Description*/}

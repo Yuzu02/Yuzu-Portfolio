@@ -1,5 +1,4 @@
 "use client";
-
 import { Button } from "@/components/common/button";
 import {
   DropdownMenu,
@@ -14,7 +13,13 @@ import { GlobeIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 
-export const LanguagePicker: React.FC = () => {
+interface LanguagePickerProps {
+  buttonSize: "sm" | "md" | "lg" | "default";
+}
+
+export const LanguagePicker: React.FC<LanguagePickerProps> = ({
+  buttonSize,
+}) => {
   const locale = useLocale() as Locale;
   const router = useRouter();
   const t = useTranslations("HeaderMenu");
@@ -31,12 +36,12 @@ export const LanguagePicker: React.FC = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button type="button" size="md">
+        <Button type="button" size={buttonSize} variant= "default">
           <GlobeIcon className="size-5" />
         </Button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent align="end" className="mt-2">
+      <DropdownMenuContent align="center" className="mt-2">
         <DropdownMenuLabel>{languageText}</DropdownMenuLabel>
         <DropdownMenuSeparator />
 

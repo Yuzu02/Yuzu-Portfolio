@@ -6,6 +6,8 @@
   },
 
   "HeaderMenu": {
+    "logo": "Yuzu",
+    "logoPoint": ".",
     "home": "Inicio",
     "services": "Servicios",
     "resume": "Currículum",
@@ -17,6 +19,12 @@
         "en": "Inglés",
         "es": "Español"
       }
+    },
+    "Theme": {
+      "toggleTheme": "Cambiar Tema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Tema del Sistema"
     }
   },
 

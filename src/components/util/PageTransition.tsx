@@ -17,7 +17,7 @@ export default function PageTransition({
             opacity: 0,
             transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
           }}
-          className="h-screen w-screen fixed top-0 bg-primary pointer-events-none"
+          className="h-screen w-screen fixed top-0 bg-gray-50 dark:bg-primary pointer-events-none"
         />
         {children}
       </div>

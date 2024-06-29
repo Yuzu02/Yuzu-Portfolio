@@ -4,8 +4,9 @@
     "logo": "Yuzu",
     "logoPoint": "."
   },
-
   "HeaderMenu": {
+    "logo": "Yuzu",
+    "logoPoint": ".",
     "home": "Home",
     "services": "Services",
     "resume": "Resume",
@@ -17,6 +18,12 @@
         "en": "English",
         "es": "Spanish"
       }
+    },
+    "Theme": {
+      "toggleTheme": "Toggle Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System Default"
     }
   },
 

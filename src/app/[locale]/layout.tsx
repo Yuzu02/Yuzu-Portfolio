@@ -5,6 +5,9 @@ import "../globals.css";
 // Analytics
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
+// Theme Provider
+import { ThemeProvider } from "@/components/common/theme-provider";
+
 // Next-Intl
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -50,17 +53,23 @@ export default async function LocaleLayout({
   children,
   params: { locale },
 }: Readonly<RootLayoutProps>) {
-  // Providing all messages to the client
-  // side is the easiest way to get started
+  // Provide messages for the locale to the NextIntlClientProvider
   const messages = await getMessages();
   return (
     <NextIntlClientProvider messages={messages}>
-      <html lang={locale}>
+      <html lang={locale} suppressHydrationWarning>
         <body className={jetbrains_Mono.variable}>
-          <Header />
-          <StairTransition />
-          <PageTransition>{children}</PageTransition>
-          <SpeedInsights />
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            <StairTransition />
+            <PageTransition>{children}</PageTransition>
+            <SpeedInsights />
+          </ThemeProvider>
         </body>
       </html>
     </NextIntlClientProvider>

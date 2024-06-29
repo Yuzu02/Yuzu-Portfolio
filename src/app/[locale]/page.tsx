@@ -28,7 +28,7 @@ export default function Home() {
               {Hero("heroSubTitle")}
               <br /> <span className="text-accent"> {Hero("heroName")}</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
+            <p className="max-w-[500px] mb-9 dark:text-white/80 text-primary">
               {Hero("heroPhrase")}
             </p>
             {/* btn & socials*/}
@@ -44,7 +44,7 @@ export default function Home() {
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
-                  iconStyles="w-9 h-9 border border-accent rounded-full flex items-center justify-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
+                  iconStyles="w-9 h-9 border border-accent rounded-full flex items-center justify-center text-accent text-base hover:bg-accent hover:text-white hover:transition-all duration-500"
                 />
               </div>
             </div>

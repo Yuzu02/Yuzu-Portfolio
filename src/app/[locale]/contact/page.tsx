@@ -74,7 +74,7 @@ export default function Contact() {
               <h3 className="text-accent text-4xl">
                 {contactData.formData.title}
               </h3>
-              <p className="text-white/60">
+              <p className="dark:text-white/60 text-yellow-400">
                 {contactData.formData.description}
               </p>
               {/* Input */}
@@ -125,7 +125,7 @@ export default function Contact() {
                 placeholder={contactData.formData.message}
               />
               {/* Button */}
-              <Button size="md" className="max-w-40">
+              <Button size="md" className="max-w-40 font-semibold">
                 {contactData.formData.send}
               </Button>
             </form>

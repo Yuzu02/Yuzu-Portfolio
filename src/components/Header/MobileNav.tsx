@@ -5,6 +5,7 @@ import { SheetTrigger, Sheet, SheetContent } from "../common/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
+import { ModeToggle } from "../util/ThemeModePicker";
 
 export default function MobileNav() {
   const HeaderMenu = useTranslations("HeaderMenu");
@@ -39,11 +40,16 @@ export default function MobileNav() {
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col rounded-l-3xl">
+        <div className="flex justify-start p-4 ml-2">
+          <ModeToggle />
+        </div>
         {/*Logo*/}
-        <div className="mt-32 mb-40 text-center text-2xl">
+        {/*Default mt-32 mb-40*/}
+        <div className="mt-[88px] mb-24 text-center text-2xl">
           <Link href={"/"}>
             <h1 className="text-4xl font-semi-bold">
-              Yuzu<span className="text-accent">.</span>
+              {HeaderMenu("logo")}
+              <span className="text-accent">{HeaderMenu("logoPoint")}</span>
             </h1>
           </Link>
         </div>

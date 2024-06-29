@@ -125,7 +125,7 @@ export default function Resume() {
                 <h3 className="text-4xl font-bold">
                   {ExperienceData("title")}
                 </h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[600px] dark:text-white/60 text-yellow-400 mx-auto xl:mx-0">
                   {ExperienceData("description")}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -145,7 +145,7 @@ export default function Resume() {
                           <div className="flex items-center gap-3">
                             {/* Dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">
+                            <p className="dark:text-white/60 text-yellow-400">
                               {ExperienceList(`${item}.company`)}
                             </p>
                           </div>
@@ -161,7 +161,7 @@ export default function Resume() {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{EducationData("title")}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[600px] dark:text-white/60 text-yellow-400 mx-auto xl:mx-0">
                   {EducationData("description")}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -181,7 +181,7 @@ export default function Resume() {
                           <div className="flex items-center gap-3">
                             {/* Dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">
+                            <p className="dark:text-white/60 text-yellow-400">
                               {EducationList(`${item}.institution`)}
                             </p>
                           </div>
@@ -198,7 +198,7 @@ export default function Resume() {
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] items-center xl:text-left">
                   <h3 className="text-4xl font-bold">{SkillsData("title")}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <p className="max-w-[600px] dark:text-white/60 text-yellow-400 mx-auto xl:mx-0">
                     {SkillsData("description")}
                   </p>
                 </div>
@@ -207,11 +207,11 @@ export default function Resume() {
                     return (
                       <li
                         key={skill.name}
-                        className="flex items-center gap-3 text-white/60"
+                        className="flex items-center gap-3 dark:text-white/60 text-yellow-400"
                       >
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-scrollArea rounded-xl flex justify-center items-center group">
+                            <TooltipTrigger className="w-full h-[150px] dark:bg-scrollArea rounded-xl flex justify-center items-center group">
                               <div className="text-6xl group-hover:text-accent transition-all duration-300">
                                 {skill.icon}
                               </div>
@@ -232,7 +232,7 @@ export default function Resume() {
             <TabsContent value="about" className="w-full">
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{AboutData("title")}</h3>
-                <p className="max-2[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-2[600px] dark:text-white/60 text-yellow-400 mx-auto xl:mx-0">
                   {AboutData("description")}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
@@ -243,7 +243,7 @@ export default function Resume() {
                         className="flex items-center justify-center xl:justify-start gap-4"
                       >
                         <span className="text-accent">•</span>
-                        <span className="text-white/60">
+                        <span className="dark:text-white/60 text-yellow-400">
                           {AboutInfo(`${item}.fieldName`)}
                         </span>
                         <span className="text-base">
