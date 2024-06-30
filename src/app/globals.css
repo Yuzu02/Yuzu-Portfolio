@@ -22,4 +22,14 @@
   .text-outline-hover {
     -webkit-text-stroke: 1px #6f00ff;
   }
+
+  .text-outline-light {
+    -webkit-text-stroke: 1px #1c1c22;
+  }
+  .text-outline-light-hover {
+    -webkit-text-stroke: 1px #6f00ff;
+  }
+  .skill-icon {
+    color: currentColor;
+  }
 }

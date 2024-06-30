@@ -36,17 +36,14 @@ export default function Services() {
               >
                 {/*Top*/}
                 <div className="w-full flex justify-between items-center">
-                  <div
-                    className="text-5xl font-extrabold text-outline
-                  text-transparent group-hover:text-outline-hover transition-all duration-500"
-                  >
+                  <div className="text-5xl font-extrabold text-outline-light dark:text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
                     {Services(`${service}.num`)}
                   </div>
                   <Link
                     href={Services(`${service}.href`) ?? ""}
-                    className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
+                    className="w-[70px] h-[70px] rounded-full dark:bg-white bg-gray-800 group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                   >
-                    <BsArrowDownRight className="text-primary text-3xl" />
+                    <BsArrowDownRight className="dark:text-primary text-white text-3xl" />
                   </Link>
                 </div>
                 {/*Title*/}
@@ -54,11 +51,11 @@ export default function Services() {
                   {Services(`${service}.text`)}
                 </h2>
                 {/*Description*/}
-                <p className="text-white/60">
+                <p className="dark:text-white/60 text-primary/60">
                   {Services(`${service}.description`)}
                 </p>
                 {/*Border*/}
-                <div className="border-b border-white/20 w-full"></div>
+                <div className="border-b dark:border-white/20 border-primary/20 w-full"></div>
               </div>
             );
           })}

@@ -6,7 +6,7 @@ import "../globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Theme Provider
-import { ThemeProvider } from "@/components/common/theme-provider";
+import { ThemeProvider } from "@/components/Theme/theme-provider";
 
 // Next-Intl
 import { NextIntlClientProvider } from "next-intl";

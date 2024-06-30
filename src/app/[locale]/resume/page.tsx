@@ -3,9 +3,14 @@
 // Translation
 import { useTranslations } from "next-intl";
 
+// Next-Theme
+import { useTheme } from "next-themes";
+
 // Icons
-import { FaHtml5, FaCss3, FaReact, FaPython, FaGitAlt } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaGitAlt, FaPython } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
+import { IoPersonCircle } from "react-icons/io5";
+import PythonLogo from "@/components/extra/PythonLogo";
 
 // Components
 import {
@@ -33,44 +38,90 @@ interface SkillItem {
   name: string;
 }
 
-const skills: SkillItem[] = [
-  {
-    icon: <FaHtml5 />,
-    name: "HTML5",
+const iconColors = {
+  HTML5: "#E34F26",
+  CSS3: "#1572B6",
+  TailwindCSS: "#06B6D4",
+  TypeScript: "#3178C6",
+  React: "#61DAFB",
+  NextJS: "#000000",
+  Python: {
+    primary: "#3776AB",
+    secondary: "#FFD43B",
   },
-  {
-    icon: <FaCss3 />,
-    name: "CSS3",
-  },
-  {
-    icon: <SiTailwindcss />,
-    name: "Tailwind CSS",
-  },
-  {
-    icon: <SiTypescript />,
-    name: "TypeScript",
-  },
-  {
-    icon: <FaReact />,
-    name: "React.js",
-  },
-  {
-    icon: <SiNextdotjs />,
-    name: "Next.js",
-  },
-  {
-    icon: <FaPython />,
-    name: "Python",
-  },
-  {
-    icon: <FaGitAlt />,
-    name: "Git",
-  },
-];
+  Git: "#F05032",
+};
 
 export default function Resume() {
   // Translation Hook
   const Resume = useTranslations("Resume");
+
+  // Theme Icons
+  const { resolvedTheme } = useTheme();
+
+  const skills: SkillItem[] = [
+    {
+      icon: (
+        <FaHtml5
+          color={resolvedTheme === "dark" ? undefined : iconColors.HTML5}
+        />
+      ),
+      name: "HTML5",
+    },
+    {
+      icon: (
+        <FaCss3
+          color={resolvedTheme === "dark" ? undefined : iconColors.CSS3}
+        />
+      ),
+      name: "CSS3",
+    },
+    {
+      icon: (
+        <SiTailwindcss
+          color={resolvedTheme === "dark" ? undefined : iconColors.TailwindCSS}
+        />
+      ),
+      name: "Tailwind CSS",
+    },
+    {
+      icon: (
+        <SiTypescript
+          color={resolvedTheme === "dark" ? undefined : iconColors.TypeScript}
+        />
+      ),
+      name: "TypeScript",
+    },
+    {
+      icon: (
+        <FaReact
+          color={resolvedTheme === "dark" ? undefined : iconColors.React}
+        />
+      ),
+      name: "React.js",
+    },
+    {
+      icon: (
+        <SiNextdotjs
+          color={resolvedTheme === "dark" ? undefined : iconColors.NextJS}
+        />
+      ),
+      name: "Next.js",
+    },
+    {
+      icon: resolvedTheme === "dark" ? <FaPython /> : <PythonLogo />,
+      name: "Python",
+    },
+    {
+      icon: (
+        <FaGitAlt
+          color={resolvedTheme === "dark" ? undefined : iconColors.Git}
+        />
+      ),
+      name: "Git",
+    },
+  ];
+
   // Experience
   const ExperienceData = useTranslations("Experience");
   const ExperienceList = useTranslations("ExperienceList");
@@ -125,7 +176,7 @@ export default function Resume() {
                 <h3 className="text-4xl font-bold">
                   {ExperienceData("title")}
                 </h3>
-                <p className="max-w-[600px] dark:text-white/60 text-yellow-400 mx-auto xl:mx-0">
+                <p className="max-w-[600px] dark:text-white/60 text-primary/70 mx-auto xl:mx-0">
                   {ExperienceData("description")}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -145,7 +196,7 @@ export default function Resume() {
                           <div className="flex items-center gap-3">
                             {/* Dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="dark:text-white/60 text-yellow-400">
+                            <p className="dark:text-white/60 text-primary/70">
                               {ExperienceList(`${item}.company`)}
                             </p>
                           </div>
@@ -161,7 +212,7 @@ export default function Resume() {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{EducationData("title")}</h3>
-                <p className="max-w-[600px] dark:text-white/60 text-yellow-400 mx-auto xl:mx-0">
+                <p className="max-w-[600px] dark:text-white/60 text-primary/70 mx-auto xl:mx-0">
                   {EducationData("description")}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -181,7 +232,7 @@ export default function Resume() {
                           <div className="flex items-center gap-3">
                             {/* Dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="dark:text-white/60 text-yellow-400">
+                            <p className="dark:text-white/60 text-primary/70">
                               {EducationList(`${item}.institution`)}
                             </p>
                           </div>
@@ -198,7 +249,7 @@ export default function Resume() {
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] items-center xl:text-left">
                   <h3 className="text-4xl font-bold">{SkillsData("title")}</h3>
-                  <p className="max-w-[600px] dark:text-white/60 text-yellow-400 mx-auto xl:mx-0">
+                  <p className="max-w-[600px] dark:text-white/60 text-primary/70 mx-auto xl:mx-0 text-center xl:text-left">
                     {SkillsData("description")}
                   </p>
                 </div>
@@ -207,7 +258,7 @@ export default function Resume() {
                     return (
                       <li
                         key={skill.name}
-                        className="flex items-center gap-3 dark:text-white/60 text-yellow-400"
+                        className="flex items-center gap-3 dark:text-white/60"
                       >
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
@@ -232,18 +283,21 @@ export default function Resume() {
             <TabsContent value="about" className="w-full">
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{AboutData("title")}</h3>
-                <p className="max-2[600px] dark:text-white/60 text-yellow-400 mx-auto xl:mx-0">
+                <p className="max-2[600px] dark:text-white/60 text-primary/70 mx-auto xl:mx-0">
                   {AboutData("description")}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                  <div className="xl:hidden mb-5">
+                    <IoPersonCircle className="text-8xl dark:text-white mx-auto hover:text-accent transition-all duration-500 text-gray-800" />
+                  </div>
                   {AboutListData.map((item) => {
                     return (
                       <li
                         key={AboutInfo(`${item}.fieldName`)}
-                        className="flex items-center justify-center xl:justify-start gap-4"
+                        className="flex items-center xl:justify-start gap-4"
                       >
                         <span className="text-accent">•</span>
-                        <span className="dark:text-white/60 text-yellow-400">
+                        <span className="dark:text-white/60 text-primary/60">
                           {AboutInfo(`${item}.fieldName`)}
                         </span>
                         <span className="text-base">

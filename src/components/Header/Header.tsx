@@ -1,12 +1,22 @@
 import { useTranslations } from "next-intl";
-import { LanguagePicker } from "../util/LanguagePicker";
+import { LanguagePicker } from "../Toggle/LanguagePicker";
 import Link from "next/link";
 import { Button } from "../common/button";
 
 // Components
-import Nav from "./Nav";
-import MobileNav from "./MobileNav";
-import { ModeToggle } from "../util/ThemeModePicker";
+import Nav from "./Nav/Nav";
+import MobileNav from "./Nav/MobileNav";
+import { ModeToggle } from "../Toggle/ThemeModePicker";
+
+/* Header Component Standby  
+
+          <Link href={"/contact"}>
+              <Button className="font-semibold" size="default">
+                {header("hireMe")}
+              </Button>
+            </Link>
+
+*/
 
 export default function Header() {
   const header = useTranslations("Header");
@@ -24,13 +34,8 @@ export default function Header() {
         {/* Desktop Nav & hire me button*/}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href={"/contact"}>
-            <Button className="font-semibold" size="default">
-              {header("hireMe")}
-            </Button>
-          </Link>
 
-          <div className="justify-center items-center font-semibold">
+          <div className="xl:flex gap-3 items-center font-semibold">
             <LanguagePicker buttonSize="default" />
             <ModeToggle />
           </div>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import ThemedImage from "../Theme/ThemeImage";
 
 export default function Photo() {
   return (
@@ -25,16 +26,9 @@ export default function Photo() {
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
           className="w-[260px] h-[260px] xl:w-[460px] xl:h-[460px] dark:mix-blend-lighten
-          absolute bg-accent rounded-full z-10"
+          absolute   rounded-full z-10"
         >
-          <Image
-            src="/assets/Roze/photo5.png"
-            priority
-            quality={100}
-            fill
-            alt="Yuzu"
-            className="object-contain rounded-full opacity-80"
-          />
+          <ThemedImage />
         </motion.div>
         {/* Circle*/}
         <motion.svg

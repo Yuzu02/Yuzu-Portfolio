@@ -1,11 +1,11 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { SheetTrigger, Sheet, SheetContent } from "../common/sheet";
+import { SheetTrigger, Sheet, SheetContent } from "../../common/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
-import { ModeToggle } from "../util/ThemeModePicker";
+import { ModeToggle } from "../../Toggle/ThemeModePicker";
 
 export default function MobileNav() {
   const HeaderMenu = useTranslations("HeaderMenu");

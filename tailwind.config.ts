@@ -4,7 +4,9 @@ import type { Config } from "tailwindcss";
 
 // Extra Accent-Color Hover (#6112c9 , #6300e4)
 
-// Extra Light Colors (#e6e6e6 , #cccccc)
+// Extra Light Colors (#e6e6e6 , #cccccc, #c5bebe)
+
+// Light Bg Colors (#FBFBFB, #F5F5F5)
 
 const config = {
   darkMode: ["class"],
@@ -34,7 +36,7 @@ const config = {
         primary: "#1c1c22",
         list: "#27272c",
         scrollArea: "#232329",
-        light: "#c5bebe",
+        light: "#F5F5F5",
         lightList: "#cccccc",
         lightScrollArea: "#e6e6e6",
         extraLight1: "#ff00c3",
