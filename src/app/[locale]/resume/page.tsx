@@ -185,7 +185,7 @@ export default function Resume() {
                       return (
                         <li
                           key={ExperienceList(`${item}.number`)}
-                          className="bg-scrollArea h-[184px] px-6 py-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="dark:bg-scrollArea bg-gray-200/80 h-[184px] px-6 py-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">
                             {ExperienceList(`${item}.date`)}
@@ -221,7 +221,7 @@ export default function Resume() {
                       return (
                         <li
                           key={EducationList(`${item}.number`)}
-                          className="bg-scrollArea h-[184px] px-6 py-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="dark:bg-scrollArea bg-gray-200/80 h-[184px] px-6 py-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">
                             {EducationList(`${item}.date`)}
@@ -262,8 +262,8 @@ export default function Resume() {
                       >
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] dark:bg-scrollArea rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                            <TooltipTrigger className="w-full h-[150px] dark:bg-scrollArea bg-gray-200/80 rounded-xl flex justify-center items-center group">
+                              <div className="text-6xl dark:group-hover:text-accent transition-all duration-300">
                                 {skill.icon}
                               </div>
                             </TooltipTrigger>

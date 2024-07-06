@@ -1,5 +1,5 @@
 "use client";
-
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { SheetTrigger, Sheet, SheetContent } from "../../common/sheet";
 import { usePathname } from "next/navigation";
@@ -8,6 +8,7 @@ import { CiMenuFries } from "react-icons/ci";
 import { ModeToggle } from "../../Toggle/ThemeModePicker";
 
 export default function MobileNav() {
+
   const HeaderMenu = useTranslations("HeaderMenu");
 
   const Links = [
@@ -63,7 +64,7 @@ export default function MobileNav() {
                   link.path === pathname &&
                   "text-accent border-b-2 border-accent"
                 }
-                text-xl capitalize hover-text-accent transition-all`}
+                text-xl capitalize hover-text-accent transition-all dark:font-normal font-semibold`}
               >
                 {link.name}
               </Link>

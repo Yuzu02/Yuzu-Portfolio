@@ -99,34 +99,36 @@ export default function Work() {
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* Outline Number */}
-              <div className="text-8xl leading-normal font-extrabold text-transparent text-outline">
+              <div className="text-8xl leading-normal font-extrabold text-transparent text-outline-light dark:text-outline">
                 {currentProject.num}
               </div>
               {/* Project Category */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <h2 className="text-[42px] font-bold leading-none dark:text-white text-primary group-hover:text-accent transition-all duration-500 capitalize">
                 {currentProject.category}
               </h2>
               {/* Project Description */}
-              <p className="text-white/60">{currentProject.description}</p>
+              <p className="dark:text-white/60 text-primary/70 ">
+                {currentProject.description}
+              </p>
               {/* Stack */}
               <ul className="flex gap-4">
                 {currentProject.stack.map((item, index) => (
-                  <li key={item.name} className="text-accent text-xl">
+                  <li key={item.name} className="text-accent text-xl uppercase">
                     {item.name}
                     {index !== currentProject.stack.length - 1 && ", "}
                   </li>
                 ))}
               </ul>
               {/* Border */}
-              <div className="border border-white/20"></div>
+              <div className="border dark:border-white/20 border-primary/20"></div>
               {/* Button */}
               <div className="flex items-center gap-4">
                 {/* Live Project Button */}
                 <Link href={currentProject.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                      <TooltipTrigger className="w-[70px] h-[70px] bg-primary/5 rounded-full dark:bg-white/5 flex justify-center items-center group">
+                        <BsArrowUpRight className="text-primary dark:text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>{Live}</p>
@@ -138,8 +140,8 @@ export default function Work() {
                 <Link href={currentProject.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                      <TooltipTrigger className="w-[70px] h-[70px] bg-primary/5 rounded-full dark:bg-white/5 flex justify-center items-center group">
+                        <BsGithub className="dark:text-white text-primary text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>{Github}</p>
@@ -157,7 +159,7 @@ export default function Work() {
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
-              {ProjectsData.map((project, index) => (
+              {ProjectsData.map((project) => (
                 <SwiperSlide key={project.num} className="w-full xl:w-[50%]">
                   <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     {/* Overlay */}
@@ -177,7 +179,7 @@ export default function Work() {
               {/* Slider Button */}
               <SliderBtns
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all rounded-xl"
+                btnStyles="bg-accent hover:bg-accent-hover text-white  dark:text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all rounded-xl"
                 iconStyles=""
               />
             </Swiper>

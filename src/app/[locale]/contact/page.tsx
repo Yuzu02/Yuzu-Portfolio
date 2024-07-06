@@ -15,6 +15,7 @@ import {
 } from "@/components/common/select";
 
 import { FaPhoneAlt, FaEnvelope, FaTelegram } from "react-icons/fa";
+import { RiContactsFill } from "react-icons/ri";
 import { Textarea } from "@/components/common/textarea";
 
 export default function Contact() {
@@ -57,6 +58,14 @@ export default function Contact() {
     },
   ];
 
+  /* Future implementation 
+  
+    <div className="flex justify-center items-center mb-6 mt-2">
+        <RiContactsFill className="hover:text-accent text-6xl bg-gray-200/80 rounded-md" />
+    </div>
+
+  */
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -64,17 +73,17 @@ export default function Contact() {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="py-6"
+      className="pt-6 pb-5"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           {/* Contact Form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-list rounded-xl">
+            <form className="flex flex-col gap-6 p-10 bg-gray-200/80 dark:bg-list rounded-xl">
               <h3 className="text-accent text-4xl">
                 {contactData.formData.title}
               </h3>
-              <p className="dark:text-white/60 text-yellow-400">
+              <p className="dark:text-white/60 text-primary/70">
                 {contactData.formData.description}
               </p>
               {/* Input */}
@@ -125,21 +134,27 @@ export default function Contact() {
                 placeholder={contactData.formData.message}
               />
               {/* Button */}
-              <Button size="md" className="max-w-40 font-semibold">
+              <Button
+                size="md"
+                className="max-w-40 font-semibold text-primary bg-accent hover:bg-accent-hover dark:text-primary dark:hover:bg-accent-hover"
+                variant="default"
+              >
                 {contactData.formData.send}
               </Button>
             </form>
           </div>
           {/* Contact Info */}
-          <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
+          <div className="flex-1 flex items-center xl:ml-36 order-1 xl:order-none mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
               {info.map((item) => (
                 <li key={item.title} className="flex items-center gap-6">
-                  <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-list text-accent rounded-md flex items-center justify-center">
+                  <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-gray-200/80 text-accent dark:bg-list dark:text-accent rounded-md flex items-center justify-center ">
                     <div className="text-[28px]">{item.icon}</div>
                   </div>
                   <div className="flex-1">
-                    <p className="text-white/60">{item.title}</p>
+                    <p className="dark:text-white/60 text-primary/60">
+                      {item.title}
+                    </p>
                     <h3 className="text-xl">{item.description}</h3>
                   </div>
                 </li>
