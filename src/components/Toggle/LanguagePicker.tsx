@@ -35,8 +35,13 @@ export const LanguagePicker: React.FC<LanguagePickerProps> = ({
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button type="button" size={buttonSize} variant="default">
+      <DropdownMenuTrigger asChild className="focus:outline-none">
+        <Button
+          type="button"
+          size={buttonSize}
+          variant="default"
+          className="focus:outline-none"
+        >
           <GlobeIcon className="size-5" />
         </Button>
       </DropdownMenuTrigger>

@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { LanguagePicker } from "../Toggle/LanguagePicker";
 import Link from "next/link";
-import { Button } from "../common/button";
+// import { Button } from "../common/button";
 
 // Components
 import Nav from "./Nav/Nav";

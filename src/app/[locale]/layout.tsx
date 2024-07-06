@@ -57,7 +57,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   return (
     <NextIntlClientProvider messages={messages}>
-      <html lang={locale}>
+      <html lang={locale} suppressHydrationWarning>
         <body className={jetbrains_Mono.variable}>
           <ThemeProvider
             attribute="class"
@@ -75,4 +75,3 @@ export default async function LocaleLayout({
     </NextIntlClientProvider>
   );
 }
-
