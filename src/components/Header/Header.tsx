@@ -35,8 +35,7 @@ export default function Header() {
         {/* Desktop Nav & hire me button*/}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-
-          <div className="xl:flex gap-3 items-center font-semibold">
+          <div className="xl:flex gap-2 items-center font-semibold">
             <LanguagePicker buttonSize="default" />
             <ModeToggle />
           </div>

@@ -18,7 +18,7 @@ const buttonVariants = cva(
         outlineToggle:
           "border border-primary/80 dark:border-primary bg-transparent text-xl font-bold text-yellow-400 rounded-lg",
         themeToggle:
-          "border border-primary/80 dark:border-primary bg-transparent text-xl font-bold text-yellow-400 rounded-lg ",
+          "bg-transparent text-xl font-bold text-yellow-400 rounded-lg border-purple-400",
       },
       size: {
         default: "h-[44px] px-6",

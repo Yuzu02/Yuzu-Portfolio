@@ -21,10 +21,10 @@
       }
     },
     "Theme": {
-      "toggleTheme": "Cambiar Tema",
+      "toggleTheme": "Tema",
       "light": "Claro",
       "dark": "Oscuro",
-      "system": "Tema del Sistema"
+      "system": "Sistema"
     }
   },
 

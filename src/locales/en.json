@@ -20,10 +20,10 @@
       }
     },
     "Theme": {
-      "toggleTheme": "Toggle Theme",
+      "toggleTheme": "Theme",
       "light": "Light",
       "dark": "Dark",
-      "system": "System Default"
+      "system": "System"
     }
   },
 

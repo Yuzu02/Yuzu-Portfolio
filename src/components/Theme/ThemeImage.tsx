@@ -7,7 +7,9 @@ const ThemedImage = () => {
   return (
     <Image
       src={
-        theme === "dark" ? "/assets/Roze/photo5.png" : "/assets/Roze/photo2.png"
+        theme === "dark" || theme === "system"
+          ? "/assets/Roze/photo5.png"
+          : "/assets/Roze/photo2.png"
       }
       priority
       quality={100}

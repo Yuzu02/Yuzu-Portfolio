@@ -9,6 +9,8 @@ import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/common/dropdown-menu";
 
@@ -22,24 +24,42 @@ export function ModeToggle() {
   const systemThemeText = t("Theme.system");
   const { theme } = useTheme();
 
+  // Future implementation of the theme toggle button
+  // <DropdownMenuLabel>{toggleThemeText}</DropdownMenuLabel>
+  // <DropdownMenuSeparator />
+
+  function handleThemeCookieChange(newTheme: string): void {
+    document.cookie = `NEXT_THEME=${newTheme}; path=/; max-age=31536000; SameSite=Lax`;
+  }
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outlineToggle" size="md">
+        <Button variant="themeToggle" size="sm">
           <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           <span className="sr-only">{toggleThemeText}</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="center" className="mt-1">
+      <DropdownMenuContent align="center" className="mt-1 lg:mt-2">
+        <div className="hidden sm:hidden md:hidden lg:block xl:block">
+          <DropdownMenuLabel>{toggleThemeText}</DropdownMenuLabel>
+          <DropdownMenuSeparator />
+        </div>
         <DropdownMenuCheckboxItem
-          onClick={() => setTheme("light")}
+          onClick={() => {
+            setTheme("light");
+            handleThemeCookieChange("light");
+          }}
           checked={theme === "light"}
         >
           {lightThemeText}
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
-          onClick={() => setTheme("dark")}
+          onClick={() => {
+          setTheme("dark");
+          handleThemeCookieChange("light");
+          }}
           checked={theme === "dark"}
         >
           {darkThemeText}
