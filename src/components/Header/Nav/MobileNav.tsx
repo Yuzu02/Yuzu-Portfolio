@@ -8,7 +8,6 @@ import { CiMenuFries } from "react-icons/ci";
 import { ModeToggle } from "../../Toggle/ThemeModePicker";
 
 export default function MobileNav() {
-
   const HeaderMenu = useTranslations("HeaderMenu");
 
   const Links = [

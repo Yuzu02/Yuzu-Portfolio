@@ -18,7 +18,7 @@ const buttonVariants = cva(
         outlineToggle:
           "border border-primary/80 dark:border-primary bg-transparent text-xl font-bold text-yellow-400 rounded-lg",
         themeToggle:
-          "bg-transparent text-xl font-bold text-yellow-400 rounded-lg ring-offset-none ",
+          "dark:bg-primary text-xl font-bold dark:text-yellow-400 dark:rounded-lg  ring-offset-none xl:bg-light bg-gray/500/50 text-white hover:text-yellow-400 hover:bg-light dark:hover:bg-primary transition-all duration-700 text-yellow-400 rounded-sm",
         languageToggle:
           "bg-accent dark:text-primary hover:bg-accent-hover text-white",
       },

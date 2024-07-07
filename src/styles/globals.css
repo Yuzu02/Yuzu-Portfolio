@@ -32,4 +32,17 @@
   .skill-icon {
     color: currentColor;
   }
+
+  .transition-theme-dark {
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-duration: 500ms;
+    transition-delay: 20ms;
+  }
+  .transition-theme-light {
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+    transition-delay: 20ms;
+  }
 }

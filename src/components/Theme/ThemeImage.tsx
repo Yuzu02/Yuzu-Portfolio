@@ -2,12 +2,13 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 
 const ThemedImage = () => {
-  const { theme } = useTheme();
+  const { theme, systemTheme } = useTheme();
+  const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
     <Image
       src={
-        theme === "dark" || theme === "system"
+        currentTheme === "dark"
           ? "/assets/Roze/photo5.png"
           : "/assets/Roze/photo2.png"
       }

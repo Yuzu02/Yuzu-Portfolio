@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
-import "../globals.css";
+import "@/styles/globals.css";
 
 // Analytics
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -58,12 +58,14 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages}>
       <html lang={locale} suppressHydrationWarning>
-        <body className={jetbrains_Mono.variable}>
+        <body
+          className={`${jetbrains_Mono.variable} dark:transition-theme-light transition-theme-dark`}
+        >
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
-            disableTransitionOnChange
+            // disableTransitionOnChange
           >
             <Header />
             <StairTransition />
