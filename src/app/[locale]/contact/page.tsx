@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import ContactForm from "@/components/Contact/ContactForm";
+import ContactForm from "@/components/Contact/Form/ContactForm";
 import ContactInfo from "@/components/Contact/ContactInfo";
 
 export default function Contact() {
@@ -15,9 +15,7 @@ export default function Contact() {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="xl:w-[54%] order-2 xl:order-none">
-            <ContactForm />
-          </div>
+          <ContactForm />
           <div className="flex-1 flex items-center xl:ml-36 order-1 xl:order-none mb-8 xl:mb-0">
             <ContactInfo />
           </div>

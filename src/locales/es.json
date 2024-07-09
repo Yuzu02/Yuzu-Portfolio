@@ -111,7 +111,7 @@
       "fieldName": "Idiomas",
       "fieldValue": "Español, Inglés"
     },
-    "E-mail": {
+    "Email": {
       "fieldName": "E-mail",
       "fieldValue": "Yuzu_0204@outlook.com"
     }
@@ -223,6 +223,20 @@
       "send": "Enviar Mensaje"
     },
 
+    "formMessages": {
+      "success": "Mensaje enviado correctamente.",
+      "error": "Se produjo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
+      "required": "Este campo es obligatorio.",
+      "selectService": "Por favor, selecciona un servicio.",
+      "invalidEmail": "Por favor, introduce una dirección de correo electrónico válida.",
+      "invalidPhone": "Por favor, introduce un número de teléfono válido.",
+      "minLength": "Por favor, introduce al menos 3 caracteres.",
+      "maxLength": "Por favor, no ingreses más de 200 caracteres.",
+      "invalidMessage": "Por favor, introduce un mensaje válido.",
+      "textAreaMinLength": "Por favor, introduce al menos 30 caracteres.",
+      "textAreaMaxLength": "Por favor, no ingreses más de 1500 caracteres."
+    },
+
     "ServicesTabs": {
       "title": "Selecciona un Servicio",
       "web": "Desarrollo Web",
@@ -234,5 +248,22 @@
     "Phone": "Teléfono",
     "Email": "Correo Electrónico",
     "Telegram": "Telegram"
+  },
+  "Toaster": {
+    "Form": {
+      "success": "Mensaje enviado correctamente.",
+      "error": "Se produjo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
+      "loading": "Enviando mensaje..."
+    },
+    "Theme": {
+      "light": "Tema claro seleccionado.",
+      "dark": "Tema oscuro seleccionado.",
+      "system": "Tema del sistema seleccionado."
+    },
+    "Download": {
+      "DownloadCV": "Descargar CV",
+      "downloadSuccess": "Enlace de descarga generado exitosamente.",
+      "downloadError": "Se produjo un error al generar el enlace de descarga. Por favor, inténtalo de nuevo más tarde."
+    }
   }
 }

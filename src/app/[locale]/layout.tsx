@@ -1,4 +1,8 @@
+// Schemas
 import type { Metadata } from "next";
+import "@/schemas/env";
+
+// Styles
 import { JetBrains_Mono } from "next/font/google";
 import "@/styles/globals.css";
 

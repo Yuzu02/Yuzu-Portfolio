@@ -118,7 +118,7 @@
       "fieldName": "Languages",
       "fieldValue": "English, Spanish"
     },
-    "E-mail": {
+    "Email": {
       "fieldName": "E-mail",
       "fieldValue": "Yuzu_0204@outlook.com"
     }
@@ -230,6 +230,19 @@
       "message": "Type your message here",
       "send": "Send Message"
     },
+    "formMessages": {
+      "success": "Message sent successfully.",
+      "error": "An error occurred while sending your message. Please try again later.",
+      "required": "This field is required.",
+      "selectService": "Please select a service.",
+      "invalidEmail": "Please enter a valid email address.",
+      "invalidPhone": "Please enter a valid phone number.",
+      "minLength": "Please enter at least 3 characters.",
+      "maxLength": "Please enter no more than 200 characters.",
+      "invalidMessage": "Please enter a message.",
+      "textAreaMinLength": "Please enter at least 30 characters.",
+      "textAreaMaxLength": "Please do not enter more than 1500 characters."
+    },
 
     "ServicesTabs": {
       "title": "Select a Service",
@@ -242,5 +255,22 @@
     "Phone": "Phone",
     "Email": "Email",
     "Telegram": "Telegram"
+  },
+  "Toaster": {
+    "Form": {
+      "success": "Message sent successfully.",
+      "error": "An error occurred while sending your message. Please try again later.",
+      "loading": "Sending message..."
+    },
+    "Theme": {
+      "light": "Light theme selected.",
+      "dark": "Dark theme selected.",
+      "system": "System theme selected."
+    },
+    "Download": {
+      "DownloadCV": "Download CV",
+      "downloadSuccess": "Download Link Generated Successfully.",
+      "downloadError": "An error occurred while downloading the file. Please try again later."
+    }
   }
 }

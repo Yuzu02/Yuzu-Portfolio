@@ -9,13 +9,33 @@ import { motion } from "framer-motion";
 
 export default function Services() {
   // Translation Hook
-  const Services = useTranslations("servicesList");
+  const t = useTranslations("servicesList");
   const ServicesList = [
-    "Service1",
-    "Service2",
-    "Service3",
-    "Service4",
-  ] as const;
+    {
+      num: t("Service1.num"),
+      text: t("Service1.text"),
+      description: t("Service1.description"),
+      href: "/contact",
+    },
+    {
+      num: t("Service2.num"),
+      text: t("Service2.text"),
+      description: t("Service2.description"),
+      href: "/contact",
+    },
+    {
+      num: t("Service3.num"),
+      text: t("Service3.text"),
+      description: t("Service3.description"),
+      href: "/contact",
+    },
+    {
+      num: t("Service4.num"),
+      text: t("Service4.text"),
+      description: t("Service4.description"),
+      href: "/contact",
+    },
+  ];
 
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
@@ -31,16 +51,16 @@ export default function Services() {
           {ServicesList.map((service) => {
             return (
               <div
-                key={Services(`${service}.title`)}
+                key={service.num}
                 className="flex-1 flex flex-col justify-center gap-6 group"
               >
                 {/*Top*/}
                 <div className="w-full flex justify-between items-center">
                   <div className="text-5xl font-extrabold text-outline-light dark:text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
-                    {Services(`${service}.num`)}
+                    {service.num}
                   </div>
                   <Link
-                    href={Services(`${service}.href`) ?? ""}
+                    href={service.href}
                     className="w-[70px] h-[70px] rounded-full dark:bg-white bg-gray-800 group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                   >
                     <BsArrowDownRight className="dark:text-primary text-white text-3xl" />
@@ -48,11 +68,11 @@ export default function Services() {
                 </div>
                 {/*Title*/}
                 <h2 className="text-[42px] font-bold leading-none dark:text-white text-primary group-hover:text-accent transition-all duration-500">
-                  {Services(`${service}.text`)}
+                  {service.text}
                 </h2>
                 {/*Description*/}
                 <p className="dark:text-white/60 text-primary/60">
-                  {Services(`${service}.description`)}
+                  {service.description}
                 </p>
                 {/*Border*/}
                 <div className="border-b dark:border-white/20 border-primary/20 w-full"></div>

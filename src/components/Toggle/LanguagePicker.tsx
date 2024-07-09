@@ -40,7 +40,7 @@ export const LanguagePicker: React.FC<LanguagePickerProps> = ({
           type="button"
           size={buttonSize}
           variant="default"
-          className="focus:outline-none"
+          className="focus:outline-none text-light"
         >
           <GlobeIcon className="size-5" />
         </Button>

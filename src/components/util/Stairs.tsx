@@ -19,6 +19,11 @@ const reversedIndex = (index: number) => {
   return totalSteps - index - 1;
 };
 
+// To generate different key for each div
+const generateKey = (pre: string, index: number) => {
+  return `${pre}_${index}_${new Date().getTime()}`;
+};
+
 export default function Stairs() {
   return (
     <>
@@ -31,7 +36,7 @@ export default function Stairs() {
       {[...Array(6)].map((number, index) => {
         return (
           <motion.div
-            key={number}
+            key={generateKey(number, index)}
             variants={stairAnimation}
             initial="initial"
             animate="animate"

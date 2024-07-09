@@ -16,8 +16,6 @@
 # production
 /build
 
-# Bun
-bun.lockb
 
 # misc
 .DS_Store
