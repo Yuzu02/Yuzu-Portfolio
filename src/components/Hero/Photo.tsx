@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
+import ThemedImage from "../Theme/ThemeImage";
 
 export default function Photo() {
   return (
@@ -18,24 +18,7 @@ export default function Photo() {
         {/* w-[298px] default size, w-[483px] on xl screens 
             h-[298px] default size, h-[483px] on xl screens 
         */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
-          }}
-          className="w-[260px] h-[260px] xl:w-[460px] xl:h-[460px] mix-blend-lighten
-          absolute"
-        >
-          <Image
-            src="/assets/Roze/photo5.png"
-            priority
-            quality={100}
-            fill
-            alt="Yuzu"
-            className="object-contain rounded-full opacity-80"
-          />
-        </motion.div>
+        <ThemedImage />
         {/* Circle*/}
         <motion.svg
           className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
