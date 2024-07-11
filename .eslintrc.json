@@ -1,3 +1,8 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    // Additional, per-project rules...
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"]
+  }
 }

@@ -8,7 +8,7 @@ const AboutTab = () => {
     "Name",
     "Phone",
     "Experience",
-    "E-mail",
+    "Email",
     "Telegram",
     "Nationality",
     "Languages",

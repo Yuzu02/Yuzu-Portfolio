@@ -23,6 +23,7 @@ export default function Header() {
   const header = useTranslations("Header");
 
   return (
+    // className="py-4 xl:py-6 dark:text-white text-primary"
     <header className="py-4 xl:py-6 dark:text-white text-primary">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}

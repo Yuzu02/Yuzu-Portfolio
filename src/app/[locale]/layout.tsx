@@ -8,6 +8,7 @@ import "@/styles/globals.css";
 
 // Analytics
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 // Theme Provider
 import { ThemeProvider } from "@/components/Theme/theme-provider";
@@ -74,6 +75,7 @@ export default async function LocaleLayout({
             <Header />
             <StairTransition />
             <PageTransition>{children}</PageTransition>
+            <Analytics />
             <SpeedInsights />
           </ThemeProvider>
         </body>

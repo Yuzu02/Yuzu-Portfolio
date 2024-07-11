@@ -80,9 +80,10 @@ export default function ContactForm() {
   return (
     <div className="xl:w-[54%] order-2 xl:order-none">
       <form
-        className="flex flex-col gap-4 bg-gray-200/80 dark:bg-list rounded-xl p-10"
+        className="flex flex-col gap-4 bg-gray-200/80 dark:bg-list rounded-xl p-8"
         onSubmit={handleSubmit(onSubmit)}
         name="Contact Form send by Yuzu Portfolio"
+        noValidate
       >
         <h3 className="text-accent text-4xl">{Contact.formData.title}</h3>
         <p className="dark:text-white/60 text-primary/70">
@@ -110,11 +111,7 @@ export default function ContactForm() {
             control={control}
             rules={{ required: true }}
             render={({ field }) => (
-              <Select
-                onValueChange={field.onChange}
-                value={field.value}
-                name="serviceSelect"
-              >
+              <Select onValueChange={field.onChange} value={field.value}>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder={Contact.ServicesTabs.title} />
                 </SelectTrigger>
@@ -127,7 +124,7 @@ export default function ContactForm() {
                           <SelectItem key={key} value={key.toLowerCase()}>
                             {value}
                           </SelectItem>
-                        )
+                        ),
                     )}
                   </SelectGroup>
                 </SelectContent>
