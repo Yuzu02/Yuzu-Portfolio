@@ -63,6 +63,7 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages}>
       <html lang={locale} suppressHydrationWarning>
+        <SpeedInsights />
         <body
           className={`${jetbrains_Mono.variable} dark:transition-theme-light transition-theme-dark`}
         >
@@ -76,7 +77,6 @@ export default async function LocaleLayout({
             <StairTransition />
             <PageTransition>{children}</PageTransition>
             <Analytics />
-            <SpeedInsights />
           </ThemeProvider>
         </body>
       </html>
