@@ -1,14 +1,16 @@
 type ErrorMessageProps = {
   error?: {
     type?: string;
+    message?: string;
   };
   messages: {
     required: string;
-    minLength?: string;
-    maxLength?: string;
-    pattern?: string;
-    textAreaMinLength?: string;
-    textAreaMaxLength?: string;
+    minLength: string;
+    maxLength: string;
+    invalidEmail: string;
+    invalidPhone: string;
+    textAreaMinLength: string;
+    textAreaMaxLength: string;
   };
 };
 
@@ -19,16 +21,12 @@ const ErrorMessage: React.FC<ErrorMessageProps> = ({ error, messages }) => {
 
   if (error.type === "required") {
     errorMessage = messages.required;
-  } else if (error.type === "textAreaMinLength") {
-    errorMessage = messages.textAreaMinLength;
-  } else if (error.type === "textAreaMaxLength") {
-    errorMessage = messages.textAreaMaxLength;
-  } else if (error.type === "pattern") {
-    errorMessage = messages.pattern;
   } else if (error.type === "minLength") {
     errorMessage = messages.minLength;
   } else if (error.type === "maxLength") {
     errorMessage = messages.maxLength;
+  } else if (error.type === "pattern") {
+    errorMessage = error.message;
   }
 
   if (!errorMessage) return null;

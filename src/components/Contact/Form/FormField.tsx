@@ -8,8 +8,17 @@ type FormFieldProps = {
   placeholder: string;
   register: any;
   errors: any;
-  formMessages: any;
+  formErrorMessages: {
+    required: string;
+    minLength: string;
+    maxLength: string;
+    invalidEmail: string;
+    invalidPhone: string;
+    textAreaMinLength: string;
+    textAreaMaxLength: string;
+  };
   autoComplete?: string;
+  pattern?: string;
 };
 
 export const FormField: React.FC<FormFieldProps> = ({
@@ -18,8 +27,9 @@ export const FormField: React.FC<FormFieldProps> = ({
   placeholder,
   register,
   errors,
-  formMessages,
+  formErrorMessages,
   autoComplete,
+  pattern,
 }) => (
   <div className="flex flex-col">
     <Input
@@ -29,14 +39,19 @@ export const FormField: React.FC<FormFieldProps> = ({
       autoComplete={autoComplete}
       {...register(id, {
         required: true,
-        ...(type === "email" && {
-          pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+        ...(pattern && {
+          pattern: {
+            value: new RegExp(pattern),
+            message:
+              type === "email"
+                ? formErrorMessages.invalidEmail
+                : formErrorMessages.invalidPhone,
+          },
         }),
-        ...(type === "tel" && { pattern: /^(\d[-\s]?){10,14}$/ }),
         ...(type !== "email" &&
           type !== "tel" && { maxLength: 200, minLength: 3 }),
       })}
     />
-    <ErrorMessage error={errors[id]} messages={formMessages} />
+    <ErrorMessage error={errors[id]} messages={formErrorMessages} />
   </div>
 );

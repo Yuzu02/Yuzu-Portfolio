@@ -235,16 +235,20 @@ export const useAllTranslations = () => {
       formMessages: {
         success: t("Contact.formMessages.success"),
         error: t("Contact.formMessages.error"),
-        required: t("Contact.formMessages.required"),
-        selectService: t("Contact.formMessages.selectService"),
-        invalidEmail: t("Contact.formMessages.invalidEmail"),
-        invalidPhone: t("Contact.formMessages.invalidPhone"),
-        minLength: t("Contact.formMessages.minLength"),
-        maxLength: t("Contact.formMessages.maxLength"),
-        invalidMessage: t("Contact.formMessages.invalidMessage"),
-        textAreaMinLength: t("Contact.formMessages.textAreaMinLength"),
-        textAreaMaxLength: t("Contact.formMessages.textAreaMaxLength"),
       },
+
+      formErrorMessages: {
+        required: t("Contact.formErrorMessages.required"),
+        selectService: t("Contact.formErrorMessages.selectService"),
+        invalidEmail: t("Contact.formErrorMessages.invalidEmail"),
+        invalidPhone: t("Contact.formErrorMessages.invalidPhone"),
+        minLength: t("Contact.formErrorMessages.minLength"),
+        maxLength: t("Contact.formErrorMessages.maxLength"),
+        invalidMessage: t("Contact.formErrorMessages.invalidMessage"),
+        textAreaMinLength: t("Contact.formErrorMessages.textAreaMinLength"),
+        textAreaMaxLength: t("Contact.formErrorMessages.textAreaMaxLength"),
+      },
+
       ServicesTabs: {
         title: t("Contact.ServicesTabs.title"),
         web: t("Contact.ServicesTabs.web"),

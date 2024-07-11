@@ -31,8 +31,18 @@ type Inputs = {
 const formFields = [
   { id: "firstname", type: "text", autoComplete: "given-name" },
   { id: "lastname", type: "text", autoComplete: "family-name" },
-  { id: "email", type: "email", autoComplete: "email" },
-  { id: "phone", type: "tel", autoComplete: "tel" },
+  {
+    id: "email",
+    type: "email",
+    autoComplete: "email",
+    pattern: "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}$",
+  },
+  {
+    id: "phone",
+    type: "tel",
+    autoComplete: "tel",
+    pattern: "^(\\d[-\\s]?){10,14}$",
+  },
 ];
 
 export default function ContactForm() {
@@ -49,7 +59,9 @@ export default function ContactForm() {
   const watchFields = watch();
 
   useEffect(() => {
-    console.log(watchFields);
+    if (process.env.NODE_ENV !== "production") {
+      console.log(watchFields);
+    }
   }, [watchFields]);
 
   // Theme
@@ -69,7 +81,7 @@ export default function ContactForm() {
 
     toast.promise(submitForm(formData), {
       loading: ToasterTranslations.Form.loading,
-      success: (data) => {
+      success: (_data) => {
         reset();
         return ToasterTranslations.Form.success;
       },
@@ -100,8 +112,9 @@ export default function ContactForm() {
               }
               register={register}
               errors={errors}
-              formMessages={Contact.formMessages}
+              formErrorMessages={Contact.formErrorMessages}
               autoComplete={field.autoComplete}
+              pattern={field.pattern}
             />
           ))}
         </div>
@@ -133,7 +146,7 @@ export default function ContactForm() {
           />
           <ErrorMessage
             error={errors.service}
-            messages={Contact.formMessages}
+            messages={Contact.formErrorMessages}
           />
         </div>
         <div className="flex flex-col">
@@ -149,7 +162,7 @@ export default function ContactForm() {
           />
           <ErrorMessage
             error={errors.message}
-            messages={Contact.formMessages}
+            messages={Contact.formErrorMessages}
           />
         </div>
         <Button

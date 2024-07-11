@@ -232,7 +232,9 @@
     },
     "formMessages": {
       "success": "Message sent successfully.",
-      "error": "An error occurred while sending your message. Please try again later.",
+      "error": "An error occurred while sending your message. Please try again later."
+    },
+    "formErrorMessages": {
       "required": "This field is required.",
       "selectService": "Please select a service.",
       "invalidEmail": "Please enter a valid email address.",

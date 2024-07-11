@@ -225,11 +225,14 @@
 
     "formMessages": {
       "success": "Mensaje enviado correctamente.",
-      "error": "Se produjo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
+      "error": "Se produjo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde."
+    },
+
+    "formErrorMessages": {
       "required": "Este campo es obligatorio.",
       "selectService": "Por favor, selecciona un servicio.",
-      "invalidEmail": "Por favor, introduce una dirección de correo electrónico válida.",
-      "invalidPhone": "Por favor, introduce un número de teléfono válido.",
+      "invalidEmail": "Introduce un Email válido.",
+      "invalidPhone": "Introduce un número de teléfono válido.",
       "minLength": "Por favor, introduce al menos 3 caracteres.",
       "maxLength": "Por favor, no ingreses más de 200 caracteres.",
       "invalidMessage": "Por favor, introduce un mensaje válido.",
