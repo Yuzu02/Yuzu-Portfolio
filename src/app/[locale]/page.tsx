@@ -6,7 +6,7 @@ import Stats from "@/components/Hero/Stats";
 import DownloadCV from "@/components/Hero/DownloadCV";
 
 export default function Home() {
-  /*  Before the change to the DownloadCV component
+	/*  Before the change to the DownloadCV component
             <Button
                   variant="outline"
                   size="lg"
@@ -19,7 +19,7 @@ export default function Home() {
                 </Button>
   */
 
-  /* Before the change to the Hero component 
+	/* Before the change to the Hero component 
                 <span className="text-xl">{Hero("heroTitle")}</span>
             <h1 className="h1 mb-6">
               {Hero("heroSubTitle")}
@@ -30,35 +30,35 @@ export default function Home() {
             </p>
   */
 
-  return (
-    <section className="h-full">
-      <div className="container mx-auto h-full">
-        <div
-          className="flex flex-col xl:flex-row items-center justify-between xl:pt-8
+	return (
+		<section className="h-full">
+			<div className="container mx-auto h-full">
+				<div
+					className="flex flex-col xl:flex-row items-center justify-between xl:pt-8
         xl:pb-2"
-        >
-          {/* Text */}
-          <div className="text-center xl:text-left order-2 xl:order-none">
-            <HeroText />
-            {/* btn & socials*/}
-            <div className="flex flex-col xl:flex-row items-center gap-8">
-              <DownloadCV />
-              <div className="mb-8 xl:mb-0">
-                <Social
-                  containerStyles="flex gap-6"
-                  iconStyles="w-9 h-9 border border-accent rounded-full flex items-center justify-center text-accent text-base hover:bg-accent hover:text-white dark:hover:text-primary hover:transition-all duration-500"
-                />
-              </div>
-            </div>
-          </div>
+				>
+					{/* Text */}
+					<div className="text-center xl:text-left order-2 xl:order-none">
+						<HeroText />
+						{/* btn & socials*/}
+						<div className="flex flex-col xl:flex-row items-center gap-8">
+							<DownloadCV />
+							<div className="mb-8 xl:mb-0">
+								<Social
+									containerStyles="flex gap-6"
+									iconStyles="w-9 h-9 border border-accent rounded-full flex items-center justify-center text-accent text-base hover:bg-accent hover:text-white dark:hover:text-primary hover:transition-all duration-500"
+								/>
+							</div>
+						</div>
+					</div>
 
-          {/* Photo*/}
-          <div className="order-1 xl:order-none mb-8 xl:mb-0">
-            <Photo />
-          </div>
-        </div>
-      </div>
-      <Stats />
-    </section>
-  );
+					{/* Photo*/}
+					<div className="order-1 xl:order-none mb-8 xl:mb-0">
+						<Photo />
+					</div>
+				</div>
+			</div>
+			<Stats />
+		</section>
+	);
 }

@@ -1,272 +1,272 @@
 {
-  "Header": {
-    "hireMe": "Contactar",
-    "logo": "Yuzu",
-    "logoPoint": "."
-  },
+	"Header": {
+		"hireMe": "Contactar",
+		"logo": "Yuzu",
+		"logoPoint": "."
+	},
 
-  "HeaderMenu": {
-    "logo": "Yuzu",
-    "logoPoint": ".",
-    "home": "Inicio",
-    "services": "Servicios",
-    "resume": "Currículum",
-    "work": "Proyectos",
-    "contact": "Contacto",
-    "LanguagePicker": {
-      "language": "Idioma",
-      "languages": {
-        "en": "Inglés",
-        "es": "Español"
-      }
-    },
-    "Theme": {
-      "toggleTheme": "Tema",
-      "light": "Claro",
-      "dark": "Oscuro",
-      "system": "Sistema"
-    }
-  },
+	"HeaderMenu": {
+		"logo": "Yuzu",
+		"logoPoint": ".",
+		"home": "Inicio",
+		"services": "Servicios",
+		"resume": "Currículum",
+		"work": "Proyectos",
+		"contact": "Contacto",
+		"LanguagePicker": {
+			"language": "Idioma",
+			"languages": {
+				"en": "Inglés",
+				"es": "Español"
+			}
+		},
+		"Theme": {
+			"toggleTheme": "Tema",
+			"light": "Claro",
+			"dark": "Oscuro",
+			"system": "Sistema"
+		}
+	},
 
-  "Hero": {
-    "heroTitle": "Desarrollador Full-Stack",
-    "heroSubTitle": "Hola,soy",
-    "heroName": "Yuzu",
-    "heroPhrase": "Destaco en la creación de experiencias digitales elegantes y soy experto en varios lenguajes de programación y tecnologías.",
-    "DownloadCV": "Descargar CV"
-  },
+	"Hero": {
+		"heroTitle": "Desarrollador Full-Stack",
+		"heroSubTitle": "Hola,soy",
+		"heroName": "Yuzu",
+		"heroPhrase": "Destaco en la creación de experiencias digitales elegantes y soy experto en varios lenguajes de programación y tecnologías.",
+		"DownloadCV": "Descargar CV"
+	},
 
-  "Stats": {
-    "statsTitle": "Mis Estadísticas"
-  },
+	"Stats": {
+		"statsTitle": "Mis Estadísticas"
+	},
 
-  "statsList": {
-    "YearsExperience": { "num": "2", "text": "Años de Experiencia" },
-    "ProjectsCompleted": { "num": "6", "text": "Proyectos Completados" },
-    "TechMastered": { "num": "10", "text": "Tecnologías Dominadas" },
-    "CodeCommits": { "num": "400", "text": "Commits de Código" }
-  },
+	"statsList": {
+		"YearsExperience": { "num": "2", "text": "Años de Experiencia" },
+		"ProjectsCompleted": { "num": "6", "text": "Proyectos Completados" },
+		"TechMastered": { "num": "10", "text": "Tecnologías Dominadas" },
+		"CodeCommits": { "num": "400", "text": "Commits de Código" }
+	},
 
-  "servicesList": {
-    "Service1": {
-      "num": "01",
-      "text": "Desarrollo Web",
-      "description": "Puedo construirte un sitio web desde cero o mantener uno existente. Utilizo las últimas tecnologías para brindarte las mejores soluciones."
-    },
-    "Service2": {
-      "num": "02",
-      "text": "Desarrollo de API",
-      "description": "Desarrollo y mantengo APIs Restful para tus aplicaciones web o móviles. También puedo ayudarte con la integración de APIs de terceros."
-    },
-    "Service3": {
-      "num": "03",
-      "text": "Automatización",
-      "description": "Automatiza tus procesos empresariales y ahorra tiempo y dinero a largo plazo utilizando las últimas tecnologías."
-    },
-    "Service4": {
-      "num": "04",
-      "text": "Consultoría",
-      "description": "Puedo ayudarte con tus decisiones técnicas y brindarte las mejores soluciones para tu negocio."
-    }
-  },
+	"servicesList": {
+		"Service1": {
+			"num": "01",
+			"text": "Desarrollo Web",
+			"description": "Puedo construirte un sitio web desde cero o mantener uno existente. Utilizo las últimas tecnologías para brindarte las mejores soluciones."
+		},
+		"Service2": {
+			"num": "02",
+			"text": "Desarrollo de API",
+			"description": "Desarrollo y mantengo APIs Restful para tus aplicaciones web o móviles. También puedo ayudarte con la integración de APIs de terceros."
+		},
+		"Service3": {
+			"num": "03",
+			"text": "Automatización",
+			"description": "Automatiza tus procesos empresariales y ahorra tiempo y dinero a largo plazo utilizando las últimas tecnologías."
+		},
+		"Service4": {
+			"num": "04",
+			"text": "Consultoría",
+			"description": "Puedo ayudarte con tus decisiones técnicas y brindarte las mejores soluciones para tu negocio."
+		}
+	},
 
-  "Resume": {
-    "Education": "Educación",
-    "Experience": "Experiencia",
-    "Skills": "Habilidades",
-    "About": "Sobre Mí"
-  },
+	"Resume": {
+		"Education": "Educación",
+		"Experience": "Experiencia",
+		"Skills": "Habilidades",
+		"About": "Sobre Mí"
+	},
 
-  "About": {
-    "title": "Sobre Mí",
-    "description": "Soy un Desarrollador Full Stack con pasión por crear y desarrollar aplicaciones web. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades. Soy un aprendiz rápido, trabajo bien en equipo y siempre busco nuevos desafíos. Actualmente estoy buscando nuevas oportunidades para trabajar en proyectos emocionantes y crecer como desarrollador."
-  },
+	"About": {
+		"title": "Sobre Mí",
+		"description": "Soy un Desarrollador Full Stack con pasión por crear y desarrollar aplicaciones web. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades. Soy un aprendiz rápido, trabajo bien en equipo y siempre busco nuevos desafíos. Actualmente estoy buscando nuevas oportunidades para trabajar en proyectos emocionantes y crecer como desarrollador."
+	},
 
-  "AboutInfo": {
-    "Name": {
-      "fieldName": "Nombre",
-      "fieldValue": "Yuzu"
-    },
-    "Phone": {
-      "fieldName": "Teléfono",
-      "fieldValue": "(+1) 829 807-5868"
-    },
-    "Experience": {
-      "fieldName": "Experiencia",
-      "fieldValue": "2+ Años"
-    },
-    "Telegram": {
-      "fieldName": "Telegram",
-      "fieldValue": "@Yuzu02"
-    },
-    "Nationality": {
-      "fieldName": "Nacionalidad",
-      "fieldValue": "Americana"
-    },
-    "Freelance": {
-      "fieldName": "Freelance",
-      "fieldValue": "Disponible"
-    },
-    "Languages": {
-      "fieldName": "Idiomas",
-      "fieldValue": "Español, Inglés"
-    },
-    "Email": {
-      "fieldName": "E-mail",
-      "fieldValue": "Yuzu_0204@outlook.com"
-    }
-  },
+	"AboutInfo": {
+		"Name": {
+			"fieldName": "Nombre",
+			"fieldValue": "Yuzu"
+		},
+		"Phone": {
+			"fieldName": "Teléfono",
+			"fieldValue": "(+1) 829 807-5868"
+		},
+		"Experience": {
+			"fieldName": "Experiencia",
+			"fieldValue": "2+ Años"
+		},
+		"Telegram": {
+			"fieldName": "Telegram",
+			"fieldValue": "@Yuzu02"
+		},
+		"Nationality": {
+			"fieldName": "Nacionalidad",
+			"fieldValue": "Americana"
+		},
+		"Freelance": {
+			"fieldName": "Freelance",
+			"fieldValue": "Disponible"
+		},
+		"Languages": {
+			"fieldName": "Idiomas",
+			"fieldValue": "Español, Inglés"
+		},
+		"Email": {
+			"fieldName": "E-mail",
+			"fieldValue": "Yuzu_0204@outlook.com"
+		}
+	},
 
-  "Education": {
-    "icon": "/assets/resume/cap.svg",
-    "title": "Mi Educación",
-    "description": "Soy un desarrollador autodidacta. He aprendido todo lo que sé a través de cursos en línea, tutoriales y documentación. Creo que la mejor manera de aprender es haciendo, por lo que siempre estoy trabajando en nuevos proyectos para poner a prueba mis habilidades."
-  },
+	"Education": {
+		"icon": "/assets/resume/cap.svg",
+		"title": "Mi Educación",
+		"description": "Soy un desarrollador autodidacta. He aprendido todo lo que sé a través de cursos en línea, tutoriales y documentación. Creo que la mejor manera de aprender es haciendo, por lo que siempre estoy trabajando en nuevos proyectos para poner a prueba mis habilidades."
+	},
 
-  "EducationList": {
-    "Education1": {
-      "number": "01",
-      "institution": "Universidad O&M",
-      "degree": "Ingeniería en Sistemas",
-      "date": "2022 - Presente"
-    }
-  },
+	"EducationList": {
+		"Education1": {
+			"number": "01",
+			"institution": "Universidad O&M",
+			"degree": "Ingeniería en Sistemas",
+			"date": "2022 - Presente"
+		}
+	},
 
-  "Experience": {
-    "icon": "/assets/resume/badge.svg",
-    "title": "Mi Experiencia",
-    "description": "He trabajado como desarrollador durante más de 2 años. He trabajado en una variedad de proyectos, desde pequeños sitios web hasta grandes aplicaciones web. Tengo experiencia tanto en el desarrollo front-end como en el back-end."
-  },
+	"Experience": {
+		"icon": "/assets/resume/badge.svg",
+		"title": "Mi Experiencia",
+		"description": "He trabajado como desarrollador durante más de 2 años. He trabajado en una variedad de proyectos, desde pequeños sitios web hasta grandes aplicaciones web. Tengo experiencia tanto en el desarrollo front-end como en el back-end."
+	},
 
-  "ExperienceList": {
-    "Experience1": {
-      "number": "01",
-      "company": "Freelance",
-      "position": "Desarrollador Full Stack",
-      "date": "2022 - Presente",
-      "description": "He trabajado en varios proyectos como desarrollador freelance. He construido sitios web desde cero, mantenido los existentes y desarrollado APIs Restful para web. También he ayudado a los clientes a automatizar sus procesos empresariales y brindado servicios de consultoría para ayudarles a tomar las mejores decisiones técnicas para su negocio."
-    },
-    "Experience2": {
-      "number": "02",
-      "company": "Alien Technology",
-      "position": "Especialista en Soporte Técnico",
-      "date": "2021 - 2022",
-      "description": "Proporcioné soporte técnico a clientes que tenían problemas con su hardware o software. Les ayudé a solucionar sus problemas y proporcioné soluciones para resolverlos. También trabajé con el equipo de desarrollo para identificar y solucionar errores en el software y mejorar la experiencia del usuario."
-    }
-  },
+	"ExperienceList": {
+		"Experience1": {
+			"number": "01",
+			"company": "Freelance",
+			"position": "Desarrollador Full Stack",
+			"date": "2022 - Presente",
+			"description": "He trabajado en varios proyectos como desarrollador freelance. He construido sitios web desde cero, mantenido los existentes y desarrollado APIs Restful para web. También he ayudado a los clientes a automatizar sus procesos empresariales y brindado servicios de consultoría para ayudarles a tomar las mejores decisiones técnicas para su negocio."
+		},
+		"Experience2": {
+			"number": "02",
+			"company": "Alien Technology",
+			"position": "Especialista en Soporte Técnico",
+			"date": "2021 - 2022",
+			"description": "Proporcioné soporte técnico a clientes que tenían problemas con su hardware o software. Les ayudé a solucionar sus problemas y proporcioné soluciones para resolverlos. También trabajé con el equipo de desarrollo para identificar y solucionar errores en el software y mejorar la experiencia del usuario."
+		}
+	},
 
-  "Skill": {
-    "title": "Mis Habilidades",
-    "description": "Tengo experiencia trabajando con las siguientes tecnologías:"
-  },
+	"Skill": {
+		"title": "Mis Habilidades",
+		"description": "Tengo experiencia trabajando con las siguientes tecnologías:"
+	},
 
-  "Projects": {
-    "liveProject": "Demo en Vivo",
-    "githubRepo": "Repositorio de Github",
+	"Projects": {
+		"liveProject": "Demo en Vivo",
+		"githubRepo": "Repositorio de Github",
 
-    "Project1": {
-      "num": "01",
-      "category": "Proyecto Frontend",
-      "title": "Aplicación Web de Encriptación",
-      "description": "Encripta y desencripta texto en una interfaz fácil de usar con la opción de copiar el texto encriptado al portapapeles",
-      "stack": {
-        "1": { "name": "Html 5" },
-        "2": { "name": "Css 3" },
-        "3": { "name": "Javascript" },
-        "4": { "name": "Sass" }
-      },
-      "image": "/assets/work/thumb1.png",
-      "live": "https://yuzu02.github.io/Encriptador_AppWeb/",
-      "github": "https://github.com/Yuzu02/Encriptador_AppWeb"
-    },
-    "Project2": {
-      "num": "02",
-      "category": "Proyecto Frontend",
-      "title": "Aplicación Web de Encriptación",
-      "description": "Encripta y desencripta texto en una interfaz fácil de usar con la opción de copiar el texto encriptado al portapapeles",
-      "stack": {
-        "1": { "name": "Html 5" },
-        "2": { "name": "Css 3" },
-        "3": { "name": "Javascript" },
-        "4": { "name": "Sass" }
-      },
-      "image": "/assets/work/thumb2.png",
-      "live": "https://yuzu02.github.io/Encriptador_AppWeb/",
-      "github": "https://github.com/Yuzu02/Encriptador_AppWeb"
-    },
-    "Project3": {
-      "num": "03",
-      "category": "Proyecto Frontend",
-      "title": "Aplicación Web de Encriptación",
-      "description": "Encripta y desencripta texto en una interfaz fácil de usar con la opción de copiar el texto encriptado al portapapeles",
-      "stack": {
-        "1": { "name": "Html 5" },
-        "2": { "name": "Css 3" },
-        "3": { "name": "Javascript" },
-        "4": { "name": "Sass" }
-      },
-      "image": "/assets/work/thumb3.png",
-      "live": "https://yuzu02.github.io/Encriptador_AppWeb/",
-      "github": "https://github.com/Yuzu02/Encriptador_AppWeb"
-    }
-  },
+		"Project1": {
+			"num": "01",
+			"category": "Proyecto Frontend",
+			"title": "Aplicación Web de Encriptación",
+			"description": "Encripta y desencripta texto en una interfaz fácil de usar con la opción de copiar el texto encriptado al portapapeles",
+			"stack": {
+				"1": { "name": "Html 5" },
+				"2": { "name": "Css 3" },
+				"3": { "name": "Javascript" },
+				"4": { "name": "Sass" }
+			},
+			"image": "/assets/work/thumb1.png",
+			"live": "https://yuzu02.github.io/Encriptador_AppWeb/",
+			"github": "https://github.com/Yuzu02/Encriptador_AppWeb"
+		},
+		"Project2": {
+			"num": "02",
+			"category": "Proyecto Frontend",
+			"title": "Aplicación Web de Encriptación",
+			"description": "Encripta y desencripta texto en una interfaz fácil de usar con la opción de copiar el texto encriptado al portapapeles",
+			"stack": {
+				"1": { "name": "Html 5" },
+				"2": { "name": "Css 3" },
+				"3": { "name": "Javascript" },
+				"4": { "name": "Sass" }
+			},
+			"image": "/assets/work/thumb2.png",
+			"live": "https://yuzu02.github.io/Encriptador_AppWeb/",
+			"github": "https://github.com/Yuzu02/Encriptador_AppWeb"
+		},
+		"Project3": {
+			"num": "03",
+			"category": "Proyecto Frontend",
+			"title": "Aplicación Web de Encriptación",
+			"description": "Encripta y desencripta texto en una interfaz fácil de usar con la opción de copiar el texto encriptado al portapapeles",
+			"stack": {
+				"1": { "name": "Html 5" },
+				"2": { "name": "Css 3" },
+				"3": { "name": "Javascript" },
+				"4": { "name": "Sass" }
+			},
+			"image": "/assets/work/thumb3.png",
+			"live": "https://yuzu02.github.io/Encriptador_AppWeb/",
+			"github": "https://github.com/Yuzu02/Encriptador_AppWeb"
+		}
+	},
 
-  "Contact": {
-    "formData": {
-      "title": "Contáctame",
-      "description": "Estoy disponible para trabajos freelance. Conéctate conmigo a través de correo electrónico o Telegram.",
-      "firstname": "Nombre",
-      "lastname": "Apellido",
-      "email": "Correo Electrónico",
-      "phone": "Teléfono",
-      "message": "Escribe tu mensaje aquí",
-      "send": "Enviar Mensaje"
-    },
+	"Contact": {
+		"formData": {
+			"title": "Contáctame",
+			"description": "Estoy disponible para trabajos freelance. Conéctate conmigo a través de correo electrónico o Telegram.",
+			"firstname": "Nombre",
+			"lastname": "Apellido",
+			"email": "Correo Electrónico",
+			"phone": "Teléfono",
+			"message": "Escribe tu mensaje aquí",
+			"send": "Enviar Mensaje"
+		},
 
-    "formMessages": {
-      "success": "Mensaje enviado correctamente.",
-      "error": "Se produjo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde."
-    },
+		"formMessages": {
+			"success": "Mensaje enviado correctamente.",
+			"error": "Se produjo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde."
+		},
 
-    "formErrorMessages": {
-      "required": "Este campo es obligatorio.",
-      "selectService": "Por favor, selecciona un servicio.",
-      "invalidEmail": "Introduce un Email válido.",
-      "invalidPhone": "Introduce un número de teléfono válido.",
-      "minLength": "Por favor, introduce al menos 3 caracteres.",
-      "maxLength": "Por favor, no ingreses más de 200 caracteres.",
-      "invalidMessage": "Por favor, introduce un mensaje válido.",
-      "textAreaMinLength": "Por favor, introduce al menos 30 caracteres.",
-      "textAreaMaxLength": "Por favor, no ingreses más de 1500 caracteres."
-    },
+		"formErrorMessages": {
+			"required": "Este campo es obligatorio.",
+			"selectService": "Por favor, selecciona un servicio.",
+			"invalidEmail": "Introduce un Email válido.",
+			"invalidPhone": "Introduce un número de teléfono válido.",
+			"minLength": "Por favor, introduce al menos 3 caracteres.",
+			"maxLength": "Por favor, no ingreses más de 200 caracteres.",
+			"invalidMessage": "Por favor, introduce un mensaje válido.",
+			"textAreaMinLength": "Por favor, introduce al menos 30 caracteres.",
+			"textAreaMaxLength": "Por favor, no ingreses más de 1500 caracteres."
+		},
 
-    "ServicesTabs": {
-      "title": "Selecciona un Servicio",
-      "web": "Desarrollo Web",
-      "api": "Desarrollo de API",
-      "automatization": "Automatización",
-      "consulting": "Consultoría"
-    },
+		"ServicesTabs": {
+			"title": "Selecciona un Servicio",
+			"web": "Desarrollo Web",
+			"api": "Desarrollo de API",
+			"automatization": "Automatización",
+			"consulting": "Consultoría"
+		},
 
-    "Phone": "Teléfono",
-    "Email": "Correo Electrónico",
-    "Telegram": "Telegram"
-  },
-  "Toaster": {
-    "Form": {
-      "success": "Mensaje enviado correctamente.",
-      "error": "Se produjo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
-      "loading": "Enviando mensaje..."
-    },
-    "Theme": {
-      "light": "Tema claro seleccionado.",
-      "dark": "Tema oscuro seleccionado.",
-      "system": "Tema del sistema seleccionado."
-    },
-    "Download": {
-      "DownloadCV": "Descargar CV",
-      "downloadSuccess": "Enlace de descarga generado exitosamente.",
-      "downloadError": "Se produjo un error al generar el enlace de descarga. Por favor, inténtalo de nuevo más tarde."
-    }
-  }
+		"Phone": "Teléfono",
+		"Email": "Correo Electrónico",
+		"Telegram": "Telegram"
+	},
+	"Toaster": {
+		"Form": {
+			"success": "Mensaje enviado correctamente.",
+			"error": "Se produjo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
+			"loading": "Enviando mensaje..."
+		},
+		"Theme": {
+			"light": "Tema claro seleccionado.",
+			"dark": "Tema oscuro seleccionado.",
+			"system": "Tema del sistema seleccionado."
+		},
+		"Download": {
+			"DownloadCV": "Descargar CV",
+			"downloadSuccess": "Enlace de descarga generado exitosamente.",
+			"downloadError": "Se produjo un error al generar el enlace de descarga. Por favor, inténtalo de nuevo más tarde."
+		}
+	}
 }
