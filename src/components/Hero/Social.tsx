@@ -32,8 +32,16 @@ export default function Social({
 	return (
 		<div className={containerStyles}>
 			{socials.map((item) => (
-				<Link key={item.name} href={item.path} className={iconStyles}>
+				<Link
+					key={item.name}
+					href={item.path}
+					className={iconStyles}
+					aria-label={`Visit my ${item.name} profile`}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					{item.icon}
+					<span className="sr-only">{item.name}</span>
 				</Link>
 			))}
 		</div>

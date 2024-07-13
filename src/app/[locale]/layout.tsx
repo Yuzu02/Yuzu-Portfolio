@@ -71,7 +71,7 @@ export default async function LocaleLayout({
 						attribute="class"
 						defaultTheme="system"
 						enableSystem
-						// disableTransitionOnChange
+						// disableTransitionOnChange //? Disable theme transition on page load to prevent a flash of the default theme
 					>
 						<Header />
 						<StairTransition />

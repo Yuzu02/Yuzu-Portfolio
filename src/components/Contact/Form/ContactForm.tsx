@@ -1,7 +1,5 @@
 "use client";
 import { useForm, SubmitHandler, Controller } from "react-hook-form";
-import { Toaster, toast } from "sonner";
-import { useTheme } from "next-themes";
 import { useEffect } from "react";
 import { Button } from "@/components/common/button";
 import { Textarea } from "@/components/common/textarea";
@@ -18,6 +16,7 @@ import { FormField } from "./FormField";
 import ErrorMessage from "./ErrorMessage";
 import { useAllTranslations } from "@/Hook/useAllTranslations";
 import { submitForm } from "@/actions/email";
+import { toast } from "sonner";
 
 type Inputs = {
 	firstname: string;
@@ -35,7 +34,8 @@ const formFields = [
 		id: "email",
 		type: "email",
 		autoComplete: "email",
-		pattern: "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}$",
+		pattern:
+			"[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}",
 	},
 	{
 		id: "phone",
@@ -63,11 +63,6 @@ export default function ContactForm() {
 			console.log(watchFields);
 		}
 	}, [watchFields]);
-
-	// Theme
-	const { theme } = useTheme() as {
-		theme: "light" | "dark" | "system" | undefined;
-	};
 
 	// Translations
 	const { Contact, Toaster: ToasterTranslations } = useAllTranslations();
@@ -174,7 +169,6 @@ export default function ContactForm() {
 					{Contact.formData.send}
 				</Button>
 			</form>
-			<Toaster theme={theme} />
 		</div>
 	);
 }

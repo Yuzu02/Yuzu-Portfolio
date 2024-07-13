@@ -37,21 +37,24 @@ export const LanguagePicker: React.FC<LanguagePickerProps> = ({
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild className="focus:outline-none">
 				<Button
+					id="language-toggle"
 					type="button"
 					size={buttonSize}
 					variant="default"
 					className="focus:outline-none text-light"
+					aria-label={`${languageText}: ${locale === "en" ? languageEn : languageEs}`}
 				>
 					<GlobeIcon className="size-5" />
 				</Button>
 			</DropdownMenuTrigger>
 
-			<DropdownMenuContent align="center" className="mt-2">
+			<DropdownMenuContent align="center" className="mt-2" role="menu">
 				<DropdownMenuLabel>{languageText}</DropdownMenuLabel>
 				<DropdownMenuSeparator />
 
 				<DropdownMenuCheckboxItem
 					checked={locale === "en"}
+					aria-label={`${languageEn} ${locale === "en" ? "selected" : ""}`}
 					onClick={() => {
 						handleLocaleChange("en");
 					}}
@@ -60,6 +63,7 @@ export const LanguagePicker: React.FC<LanguagePickerProps> = ({
 				</DropdownMenuCheckboxItem>
 				<DropdownMenuCheckboxItem
 					checked={locale === "es"}
+					aria-label={`${languageEs} ${locale === "es" ? "selected" : ""}`}
 					onClick={() => {
 						handleLocaleChange("es");
 					}}
