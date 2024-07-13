@@ -34,9 +34,7 @@ const AboutTab = () => {
 						<span className="dark:text-white/60 text-primary/60">
 							{AboutInfo(`${item}.fieldName`)}
 						</span>
-						<span className="text-base">
-							{AboutInfo(`${item}.fieldValue`)}
-						</span>
+						<span className="text-base">{AboutInfo(`${item}.fieldValue`)}</span>
 					</li>
 				))}
 			</ul>

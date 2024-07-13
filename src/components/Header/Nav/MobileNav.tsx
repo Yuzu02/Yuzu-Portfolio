@@ -49,9 +49,7 @@ export default function MobileNav() {
 					<Link href={"/"}>
 						<h1 className="text-4xl font-semi-bold">
 							{HeaderMenu("logo")}
-							<span className="text-accent">
-								{HeaderMenu("logoPoint")}
-							</span>
+							<span className="text-accent">{HeaderMenu("logoPoint")}</span>
 						</h1>
 					</Link>
 				</div>

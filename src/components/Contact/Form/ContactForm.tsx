@@ -108,9 +108,7 @@ export default function ContactForm() {
 							id={field.id}
 							type={field.type}
 							placeholder={
-								Contact.formData[
-									field.id as keyof typeof Contact.formData
-								]
+								Contact.formData[field.id as keyof typeof Contact.formData]
 							}
 							register={register}
 							errors={errors}
@@ -128,22 +126,15 @@ export default function ContactForm() {
 						render={({ field }) => (
 							<Select onValueChange={field.onChange} value={field.value}>
 								<SelectTrigger className="w-full">
-									<SelectValue
-										placeholder={Contact.ServicesTabs.title}
-									/>
+									<SelectValue placeholder={Contact.ServicesTabs.title} />
 								</SelectTrigger>
 								<SelectContent>
 									<SelectGroup>
-										<SelectLabel>
-											{Contact.ServicesTabs.title}
-										</SelectLabel>
+										<SelectLabel>{Contact.ServicesTabs.title}</SelectLabel>
 										{Object.entries(Contact.ServicesTabs).map(
 											([key, value]) =>
 												key !== "title" && (
-													<SelectItem
-														key={key}
-														value={key.toLowerCase()}
-													>
+													<SelectItem key={key} value={key.toLowerCase()}>
 														{value}
 													</SelectItem>
 												),

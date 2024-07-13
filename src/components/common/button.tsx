@@ -14,8 +14,7 @@ const buttonVariants = cva(
 				primary: "bg-primary dark:text-white text-primary",
 				outline:
 					"border border-accent bg-transparent hover:bg-accent dark:hover:text-primary hover:text-white",
-				toggleTheme:
-					"bg-accent text-primary font-bold text-xl rounded-full",
+				toggleTheme: "bg-accent text-primary font-bold text-xl rounded-full",
 				outlineToggle:
 					"border border-primary/80 dark:border-primary bg-transparent text-xl font-bold text-yellow-400 rounded-lg",
 				themeToggle:

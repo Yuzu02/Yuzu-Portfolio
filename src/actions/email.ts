@@ -6,10 +6,7 @@ export async function submitForm(formData: FormData) {
 	if (!apiKey) {
 		throw new Error("API key not configured");
 	}
-	formData.append(
-		"subject",
-		"New Contact Form Submission from Yuzu Portfolio",
-	);
+	formData.append("subject", "New Contact Form Submission from Yuzu Portfolio");
 	formData.append("access_key", apiKey);
 
 	try {

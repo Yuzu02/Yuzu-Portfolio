@@ -38,12 +38,8 @@ export default function Resume() {
 				>
 					{/* Tabs */}
 					<TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-						<TabsTrigger value="experience">
-							{Resume("Experience")}
-						</TabsTrigger>
-						<TabsTrigger value="education">
-							{Resume("Education")}
-						</TabsTrigger>
+						<TabsTrigger value="experience">{Resume("Experience")}</TabsTrigger>
+						<TabsTrigger value="education">{Resume("Education")}</TabsTrigger>
 						<TabsTrigger value="skills">{Resume("Skills")}</TabsTrigger>
 						<TabsTrigger value="about">{Resume("About")}</TabsTrigger>
 					</TabsList>

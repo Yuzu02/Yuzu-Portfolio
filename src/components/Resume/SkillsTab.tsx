@@ -22,9 +22,7 @@ const SkillsTab = () => {
 			name: "HTML5",
 		},
 		{
-			icon: (
-				<FaCss3 color={resolvedTheme === "dark" ? undefined : "#1572B6"} />
-			),
+			icon: <FaCss3 color={resolvedTheme === "dark" ? undefined : "#1572B6"} />,
 			name: "CSS3",
 		},
 		{
@@ -51,9 +49,7 @@ const SkillsTab = () => {
 		},
 		{
 			icon: (
-				<SiNextdotjs
-					color={resolvedTheme === "dark" ? undefined : "#000000"}
-				/>
+				<SiNextdotjs color={resolvedTheme === "dark" ? undefined : "#000000"} />
 			),
 			name: "Next.js",
 		},
@@ -63,9 +59,7 @@ const SkillsTab = () => {
 		},
 		{
 			icon: (
-				<FaGitAlt
-					color={resolvedTheme === "dark" ? undefined : "#F05032"}
-				/>
+				<FaGitAlt color={resolvedTheme === "dark" ? undefined : "#F05032"} />
 			),
 			name: "Git",
 		},
