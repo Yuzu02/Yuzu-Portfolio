@@ -72,7 +72,7 @@ export function ModeToggle() {
 							setTheme("light");
 							handleThemeCookieChange("light");
 							toast.success(toasteMessages.themeChangeToLightMode, {
-								duration: 4000,
+								duration: 2500,
 							});
 						}}
 						checked={theme === "light"}
@@ -85,7 +85,7 @@ export function ModeToggle() {
 							setTheme("dark");
 							handleThemeCookieChange("light");
 							toast.success(toasteMessages.themeChangeToDarkMode, {
-								duration: 4000,
+								duration: 2500,
 							});
 						}}
 						checked={theme === "dark"}
@@ -97,7 +97,7 @@ export function ModeToggle() {
 							setTheme("system");
 							handleThemeCookieChange("");
 							toast.success(toasteMessages.themeChangeToSystemMode, {
-								duration: 4000,
+								duration: 2500,
 							});
 						}}
 						checked={theme === "system"}
@@ -108,7 +108,7 @@ export function ModeToggle() {
 				</DropdownMenuContent>
 			</DropdownMenu>
 			<div className="fixed top-4 right-4 z-50">
-				<Toaster theme={theme} />
+				<Toaster theme={theme} visibleToasts={3} duration={2500} />
 			</div>
 		</>
 	);

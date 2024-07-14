@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { SheetTrigger, Sheet, SheetContent } from "../../common/sheet";
 import { usePathname } from "next/navigation";
@@ -37,7 +36,7 @@ export default function MobileNav() {
 	return (
 		<Sheet>
 			<SheetTrigger className="flex justify-center items-center">
-				<CiMenuFries className="text-[32px] text-accent" />
+				<CiMenuFries className="text-[32px] text-accent" aria-label="menu" />
 			</SheetTrigger>
 			<SheetContent className="flex flex-col rounded-l-3xl">
 				<div className="flex justify-start p-4 ml-2">

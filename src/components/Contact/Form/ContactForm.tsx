@@ -121,7 +121,10 @@ export default function ContactForm() {
 						render={({ field }) => (
 							<Select onValueChange={field.onChange} value={field.value}>
 								<SelectTrigger className="w-full">
-									<SelectValue placeholder={Contact.ServicesTabs.title} />
+									<SelectValue
+										placeholder={Contact.ServicesTabs.title}
+										aria-label="Service"
+									/>
 								</SelectTrigger>
 								<SelectContent>
 									<SelectGroup>

@@ -19,12 +19,14 @@ export default function SliderBtns({
 			<button className={btnStyles}>
 				<PiCaretLeftBold
 					className={iconStyles}
+					aria-label="Previous Slide"
 					onClick={() => swiper.slidePrev()}
 				/>
 			</button>
 			<button className={btnStyles}>
 				<PiCaretRightBold
 					className={iconStyles}
+					aria-label="Next Slide"
 					onClick={() => swiper.slideNext()}
 				/>
 			</button>

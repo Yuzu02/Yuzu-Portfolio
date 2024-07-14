@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import lightImage from "public/assets/Roze/photo2.png"; // Size :  497 x 502
+import darkImage from "public/assets/Roze/photo5.png"; // Size : 429 x 421
 
 const ThemedImage = () => {
 	const { theme, systemTheme } = useTheme();
@@ -27,17 +29,15 @@ const ThemedImage = () => {
 		>
 			<div className="relative w-full h-full">
 				<Image
-					src={
-						currentTheme === "dark"
-							? "/assets/Roze/photo5.png"
-							: "/assets/Roze/photo2.png"
-					}
-					priority
-					quality={100}
+					placeholder="blur"
+					src={currentTheme === "dark" ? darkImage : lightImage}
+					loading="lazy"
+					// priority
+					quality={80}
 					fill
 					alt="Yuzu"
-					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-					className="object-contain rounded-full opacity-80 w-auto h-auto"
+					sizes="(max-width: 768px) 260px, 460px"
+					className="object-contain rounded-full opacity-80"
 				/>
 			</div>
 		</motion.div>

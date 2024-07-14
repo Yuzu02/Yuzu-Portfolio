@@ -71,7 +71,7 @@ export default function Services() {
 									{service.text}
 								</h2>
 								{/*Description*/}
-								<p className="dark:text-white/60 text-primary/60">
+								<p className="dark:text-white/60 text-primary/70">
 									{service.description}
 								</p>
 								{/*Border*/}
