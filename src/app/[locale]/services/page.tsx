@@ -62,6 +62,7 @@ export default function Services() {
 									<Link
 										href={service.href}
 										className="w-[70px] h-[70px] rounded-full dark:bg-white bg-gray-800 group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
+										aria-label="Learn More"
 									>
 										<BsArrowDownRight className="dark:text-primary text-white text-3xl" />
 									</Link>

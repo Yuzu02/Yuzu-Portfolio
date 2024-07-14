@@ -7,7 +7,6 @@ import { JetBrains_Mono } from "next/font/google";
 import "@/styles/globals.css";
 
 // Analytics
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
 // Theme Provider
@@ -63,7 +62,6 @@ export default async function LocaleLayout({
 	return (
 		<NextIntlClientProvider messages={messages}>
 			<html lang={locale} suppressHydrationWarning>
-				<SpeedInsights />
 				<body
 					className={`${jetbrains_Mono.variable} dark:transition-theme-light transition-theme-dark`}
 				>
