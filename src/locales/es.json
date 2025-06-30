@@ -166,48 +166,62 @@
 
 		"Project1": {
 			"num": "01",
-			"category": "Proyecto Frontend",
-			"title": "Aplicación Web de Encriptación",
-			"description": "Encripta y desencripta texto en una interfaz fácil de usar con la opción de copiar el texto encriptado al portapapeles",
+			"category": "Full Stack",
+			"title": "Digital Horizons",
+			"description": "Un sitio de blog tecnológico que incluye Next Auth para autenticación, soporta comentarios y reacciones, y utiliza MDX para contenido enriquecido.",
 			"stack": {
-				"1": { "name": "Html 5" },
-				"2": { "name": "Css 3" },
-				"3": { "name": "Javascript" },
-				"4": { "name": "Sass" }
+				"1": { "name": "Next.js" },
+				"2": { "name": "Tailwind CSS" },
+				"3": { "name": "MDX" },
+				"4": { "name": "Firebase" }
 			},
-			"image": "/assets/work/thumb1.png",
-			"live": "https://yuzu02.github.io/Encriptador_AppWeb/",
-			"github": "https://github.com/Yuzu02/Encriptador_AppWeb"
+			"image": "/assets/work/horizons.png",
+			"live": "https://digital-horizons.vercel.app/",
+			"github": "https://github.com/Yuzu02/Digital-Horizons"
 		},
 		"Project2": {
 			"num": "02",
-			"category": "Proyecto Frontend",
-			"title": "Aplicación Web de Encriptación",
-			"description": "Encripta y desencripta texto en una interfaz fácil de usar con la opción de copiar el texto encriptado al portapapeles",
+			"category": "Full Stack",
+			"title": "YuuSeek",
+			"description": "Un moderno motor de búsqueda de atajos de bang del lado del cliente que aprovecha los atajos de bang de DuckDuckGo para una búsqueda web eficiente.",
 			"stack": {
-				"1": { "name": "Html 5" },
-				"2": { "name": "Css 3" },
-				"3": { "name": "Javascript" },
-				"4": { "name": "Sass" }
+				"1": { "name": "Next.js" },
+				"2": { "name": "Tailwind CSS" },
+				"3": { "name": "Motion" },
+				"4": { "name": "Bun" }
 			},
-			"image": "/assets/work/thumb2.png",
-			"live": "https://yuzu02.github.io/Encriptador_AppWeb/",
-			"github": "https://github.com/Yuzu02/Encriptador_AppWeb"
+			"image": "/assets/work/YuuSeek.png",
+			"live": "https://yuu-seek.vercel.app/",
+			"github": "https://github.com/Yuzu02/YuuSeek"
 		},
 		"Project3": {
 			"num": "03",
-			"category": "Proyecto Frontend",
-			"title": "Aplicación Web de Encriptación",
-			"description": "Encripta y desencripta texto en una interfaz fácil de usar con la opción de copiar el texto encriptado al portapapeles",
+			"category": "IA",
+			"title": "PODIA",
+			"description": "Crea podcast de forma rápida y sencilla con PODIA, una aplicación web que utiliza IA para generar podcast completos a partir de texto.",
 			"stack": {
-				"1": { "name": "Html 5" },
-				"2": { "name": "Css 3" },
-				"3": { "name": "Javascript" },
-				"4": { "name": "Sass" }
+				"1": { "name": "Gradio" },
+				"2": { "name": "OpenAI" },
+				"3": { "name": "Python" }
 			},
-			"image": "/assets/work/thumb3.png",
-			"live": "https://yuzu02.github.io/Encriptador_AppWeb/",
-			"github": "https://github.com/Yuzu02/Encriptador_AppWeb"
+			"image": "/assets/work/PODIA.png",
+			"live": "https://huggingface.co/spaces/Yuzu02/PodIA",
+			"github": "https://github.com/LettyL2002/PodIA/tree/main"
+		},
+		"Project4": {
+			"num": "04",
+			"category": "Librería",
+			"title": "YuuLogger",
+			"description": "Una biblioteca de registro potente, flexible y optimizada para aplicaciones NestJS.",
+			"stack": {
+				"1": { "name": "NestJS" },
+				"2": { "name": "TypeScript" },
+				"3": { "name": "Express" },
+				"4": { "name": "Fastify" }
+			},
+			"image": "/assets/work/yuuLogger4.png",
+			"live": "https://www.npmjs.com/package/yuulogger/v/0.0.3",
+			"github": "https://github.com/Yuzu02/YuuLogger"
 		}
 	},
 

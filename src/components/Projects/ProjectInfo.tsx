@@ -30,12 +30,16 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({
 	return (
 		<>
 			{/* Outline Number */}
-			<div className="text-8xl leading-normal font-extrabold text-transparent text-outline-light dark:text-outline">
+			<div className="text-8xl leading-normal font-extrabold text-transparent text-outline-light dark:text-outline -mb-2">
 				{project.num}
+			</div>
+			{/* Project Category */}
+			<div className="text-accent font-medium text-sm uppercase tracking-wide -my-4">
+				{project.category}
 			</div>
 			{/* Project Title */}
 			<h2 className="text-[42px] font-bold leading-none dark:text-white text-primary group-hover:text-accent transition-all duration-500 capitalize">
-				{project.category}
+				{project.title}
 			</h2>
 			{/* Project Description */}
 			<p className="dark:text-white/60 text-primary/70 ">

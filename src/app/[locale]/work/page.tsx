@@ -63,6 +63,21 @@ export default function Work() {
 			live: t("Project3.live"),
 			github: t("Project3.github"),
 		},
+		{
+			num: t("Project4.num"),
+			category: t("Project4.category"),
+			title: t("Project4.title"),
+			description: t("Project4.description"),
+			stack: [
+				{ name: t("Project4.stack.1.name") },
+				{ name: t("Project4.stack.2.name") },
+				{ name: t("Project4.stack.3.name") },
+				{ name: t("Project4.stack.4.name") },
+			],
+			image: t("Project4.image"),
+			live: t("Project4.live"),
+			github: t("Project4.github"),
+		}
 	];
 
 	const [currentProjectIndex, setCurrentProjectIndex] = useState(0);

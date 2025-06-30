@@ -40,6 +40,7 @@ const ProjectSlider: React.FC<ProjectSliderProps> = ({
 								fill
 								className="object-cover object-center w-full h-full"
 							/>
+							{/* object-cover object-center*/}
 						</div>
 					</div>
 				</SwiperSlide>
