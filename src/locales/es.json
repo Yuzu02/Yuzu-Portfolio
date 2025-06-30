@@ -202,7 +202,8 @@
 			"stack": {
 				"1": { "name": "Gradio" },
 				"2": { "name": "OpenAI" },
-				"3": { "name": "Python" }
+				"3": { "name": "Python" },
+				"4": { "name": "yt-dlp" }
 			},
 			"image": "/assets/work/PODIA.png",
 			"live": "https://huggingface.co/spaces/Yuzu02/PodIA",
